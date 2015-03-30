@@ -1,0 +1,433 @@
+/*-----------------------------------------------------------------------------
+=MAIN STYLES
+-----------------------------------------------------------------------------*/
+
+
+body {
+  color: rgba(141,32,54, 0.9);
+  /*background: rgb(228,228,197);*/
+  background: image-url('bg/3.jpg'); /* add a fallback color of #d6d6d6 */
+  background-repeat: repeat-y;
+  background-position: -50px -155px;
+  padding-top: 50px;
+  font-family: 'Baskerville', 'Garamond', 'Calisto MT',  'Book Antiqua', serif;
+  height: 110%;
+}
+
+
+
+h1 {
+ font-family: 'Cinzel', serif;
+ text-align: center;
+}
+
+header {
+  background: rgba(141,32,54, 0.9);
+  color: rgb(228,228,197) !important;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  margin: 20px;
+  text-align: center
+}
+
+footer p {
+  font-size: 17px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+
+.round {
+  border-radius: 100px;
+}
+
+
+
+.blurb hr {
+  margin-bottom: 5px;
+  margin-top: -10px;
+  margin-right: 0px;
+  border-color: rgb(228,228,197)
+}
+
+hr {
+  margin-bottom: 10px;
+  margin-top: -5px;
+  border-color: rgba(141,32,54, 0.9);
+  margin-right: 100px;
+}
+
+button {
+  color: rgba(141,32,54, 0.9) !important;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.font {
+  font-family: 'Cinzel', serif;
+}
+
+
+a:hover {
+
+ text-decoration: none;
+}
+
+a:focus {
+ color: black !important;
+ text-decoration: none;
+}
+
+.carousel {
+  border-top: 10px solid rgba(141,32,54, 0.9);
+  border-bottom: 10px solid rgba(141,32,54, 0.9) ;
+}
+
+footer a {
+  color: rgba(141,32,54, 0.9) !important;
+}
+
+footer a:hover {
+  color: black !important;
+}
+/*-----------------------------------------------------------------------------
+=NAVBAR
+-----------------------------------------------------------------------------*/
+
+
+
+.navbar {
+  background: rgba(141,32,54, 0.9);
+  font-family: 'Cinzel', serif;
+  border: none;
+  border-radius: 0px !important;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: rgb(228,228,197);
+}
+
+.navbar-default .navbar-nav > li.active > a {
+  background: inherit !important;
+  color: black !important;
+}
+
+
+.dropdown-menu a {
+  background: rgba(141,32,54, 0.9);
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+nav img {
+  width: 150px;
+  height: 400%;
+  border-radius: 30px;
+}
+
+ul.nav a:hover {
+ color: black !important;
+}
+
+ul.nav a:focus {
+ color: black !important;
+}
+
+
+/*-----------------------------------------------------------------------------
+=DIVS
+-----------------------------------------------------------------------------*/
+
+.container {
+
+  margin: 0 auto;
+}
+
+.partners {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/*.flexrow {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}*/
+
+
+.partners .col-sm-3 a {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 180px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.partners img {
+  width: 100%;
+}
+
+.blurb {
+  background: rgba(141,32,54,0.9);
+  color: rgb(228,228,197) !important;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.blurb .row {
+  margin : 0px;
+}
+
+.blurb .container h3 {
+  margin-top: 0px;
+}
+
+.blurb .container .content {
+  width: 100%;
+}
+
+.blurb p {
+   font-size: 17px;
+   margin: 0px;
+}
+
+.jumbotron {
+  background: none;
+  margin-top: -50px;
+
+}
+
+.leaflet-container{
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    -webkit-border-radius:10px;
+    }
+
+
+/*-----------------------------------------------------------------------------
+=IDs
+-----------------------------------------------------------------------------*/
+
+#close img {
+  margin: 0;
+  padding: -10;
+}
+
+#map {
+  height: 430px;
+  width: 100%;
+  margin-bottom: 15px;
+  color: rgba(141,32,54, 0.9);
+}
+
+#map2 {
+  height: 665px;
+  width: 600px;
+}
+
+#nospace {
+  margin-top: -30px;
+  margin-bottom: -15px;
+}
+
+.logo {
+  padding-right: 0px;
+  padding-top: 0px;
+  margin-top: -10px;
+}
+
+#italianlink {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+#brand {
+  font-size: 1.5em;
+}
+
+
+#black {
+  color: black;
+}
+
+#black:hover {
+  color: rgb(228,228,197);
+  cursor: pointer;
+}
+
+
+/*-----------------------------------------------------------------------------
+=CONTACT PAGE
+-----------------------------------------------------------------------------*/
+
+#contactbody .container {
+  background: rgba(141,32,54,0.9);
+  color: rgb(228,228,197);
+  border-radius: 10px;
+  padding-left: 30px;
+}
+
+#contactbody p {
+  margin: -5px;
+  font-size: 17px;
+
+}
+
+#contactbody a {
+  text-decoration: none;
+  color: rgb(228,228,197);
+}
+
+#box {
+  padding-left: 20px;
+}
+
+.contactmain {
+  border: 1px solid rgba(141,32,54, 0.9);
+  padding: 7px;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#contactbody .contact p {
+  text-align: center;
+  margin: 0px 10px;
+  padding: 0px;
+}
+
+
+
+.try {
+  background-image: image-url('bottle.jpg');
+  position: relative;
+  /*---WHY DOESNT THIS EFFECT WORK?^^ -----------------*/
+  padding-top: 8%;
+  padding-right: 0px;
+  padding-bottom: 8%;
+  padding-left: 0px;
+  height: 200px;
+}
+
+.bg {
+  background-image: image-url('bottle.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  height: 200px;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.contact1 {
+  background-color: red;
+}
+
+
+/*-----------------------------------------------------------------------------
+=MODAL
+-----------------------------------------------------------------------------*/
+
+.modal {
+  color: rgba(141,32,54, 0.9);
+}
+
+.modal-body p {
+  font-size: 15px;
+}
+
+.modal-body a {
+  text-decoration: none;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body img {
+  width: 100%;
+  padding-bottom: 15px;
+
+}
+
+.modal-footer img {
+  height: 50px;
+  float: left;
+}
+
+
+/*-----------------------------------------------------------------------------
+=WINE PAGE
+-----------------------------------------------------------------------------*/
+#winebody .blurb {
+  padding: 10px;
+}
+
+#winebody .modal img {
+  padding-bottom: 0px;
+}
+
+
+.caption {
+  color: black;
+  font-style: italic;
+}
+
+
+/*-----------------------------------------------------------------------------
+=DIVS
+-----------------------------------------------------------------------------*/
+
+
+.box {
+  margin: 5px;
+  width: 214px;
+}
+
+.box img {
+  width: 100%;
+  border-bottom: 1px solid rgba(141,32,54, 0.9);
+}
+
+
+.box {
+  background: rgb(228,228,197);
+  border: 2px solid rgba(141,32,54, 0.9);
+}

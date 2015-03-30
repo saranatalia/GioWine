@@ -1,0 +1,213 @@
+<%= stylesheet_link_tag 'http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css',
+                        'leaflet.awesome-markers',
+                        media: 'all' %>
+<%= javascript_include_tag  'http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js',
+                            media: 'all' %>
+
+<div class="container center">
+
+      <h1 class="bold">Welcome to GioWine, Inc.</h1>
+      <h4 class="bold">The Italian link to the Americas</h4>
+
+      </div>
+
+
+
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <%= image_tag("test/valley.jpg") %>
+            <div class="carousel-caption">
+              We like wine
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("test/field.jpg") %>
+            <div class="carousel-caption">
+              here at giowine
+            </div>
+          </div>
+          <div class="item">
+            <%= image_tag("test/grape2.jpg") %>
+            <div class="carousel-caption">
+              yes we do
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <br>
+      <div class="jumbotron">
+        <div class="blurb">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="container">
+                <h3>where</h3>
+                <hr>
+                <!-- MAP-->
+                <div id="map">
+                  <script>
+                    var map = L.map('map', {
+                      center: [-3.146934, -78.103972],
+                      zoom: 0,
+                      minZoom: 2,
+                      maxZoom: 0,
+                      scrollWheelZoom: false,
+                      doubleClickZoom: false,
+                      dragging: false,
+                      touchZoom: false,
+                      zoomControl: false
+                    });
+
+
+                    var Stamen_Watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+                      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                      subdomains: 'abcd',
+                      minZoom: 1,
+                      maxZoom: 16
+                    }).addTo(map);
+
+
+                    var marker = L.marker([-32.9264482,-68.813779]);
+                    marker.addTo(map);
+                    marker.bindPopup("Mendoza, Argentina").openPopup();
+// marker.bindPopup('<p>Hello world!<br />This is a nice popup.</p>');
+// Alert code:
+//marker.on('click', function() {
+//alert(1);
+//});
+
+var marker = L.marker([-8.7565456,-63.8549068]);
+marker.addTo(map);
+marker.bindPopup("Porto Velho, Brasil").openPopup();
+
+var marker = L.marker([14.62622,-90.4925605]);
+marker.addTo(map);
+marker.bindPopup("Mixco, Guatemala").openPopup();
+
+var marker = L.marker([25.782324,-80.2310801]);
+marker.addTo(map);
+marker.bindPopup("Miami, Florida USA").openPopup();
+
+var marker = L.marker([19.2902231,-81.369597]);
+marker.addTo(map);
+marker.bindPopup("George Town, Cayman Islands").openPopup();
+
+var marker = L.marker([32.8245525,-117.0951632]);
+marker.addTo(map);
+marker.bindPopup("Main Office <br> San Diego, California USA").openPopup();
+
+
+
+// marker.on('mouseover', function() {
+//   var icon = marker._icon;
+//   $(icon).addClass('animated pulse');
+//   $(icon).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+//     $(icon).removeClass('animated pulse');
+//   });
+// });
+</script>
+</div><!-- /MAP-->
+
+</div>
+</div><!--/column-->
+
+<div class="col-md-6">
+  <div class="container">
+    <h3>about</h3>
+    <hr>
+    <div class="content">
+      <p>GIOWINE was founded in 2000 by Giovanni Cardullo as an International Consulting Firm that specializes in representing fine Italian products. With offices in X countries, we have on-site representatives with networks and experience in international markets across the American continents.</p>
+      <br>
+      <p>We cultivate continuing direct contact between suppliers and clients for stable and dynamic up-to-date connections. We work with genuine enthusiasm to develop brand and product sales internationally at a highly personal and technical level from the producer to the final consumer.</p>
+
+      <br>
+      <p class="bold">We are the only team specialized in Italian wine to cover uninterrupted territory<!-- Button trigger modal -->
+        <a data-toggle="modal" data-target="#myModal" id="black">
+          from Alaska to Argentina!
+        </a>
+      </p>
+    </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"> We promote fine Italian products in the following X countries:</h4>
+            </div>
+            <div class="modal-body">
+              <p>• <strong>North America:</strong> United States</p>
+              <p>• <strong>Central America:</strong> Mexico, Belize, Bolivia, Costa Rica, El salvador, Guatemala, Honduras, Nicaragua, Panama</p>
+              <p>• <strong>Caribbean:</strong> Antigua & Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Cayman Islands, Curacao, Dominican Republic, Haiti, Martinique, Netherlands Antilles, Puerto Rico, Saint Lucia, Saint Martin, Saint Thomas, Trinidad & Tobago, Turks & Caicos, U.S. Virgin Islands</p>
+              <p>• <strong>South America:</strong> Argentina, Brazil, Chile, Colombia, Guyana, Paraguay, Peru, Uruguay, Venezuela </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div><!--end modal-->
+
+    </div><!--end row-->
+  </div><!--end column-->
+</div><!--end row-->
+</div><!--end .blurb-->
+</div><!-- /.jumbotron -->
+
+
+
+<div class="container">
+  <h3>our partners</h3>
+  <hr>
+  <div class="partners" id="close">
+    <% brands = [
+                  {name:'Batasiolo', img:'brands/batasiolo.png', url:'http://www.batasiolo.com/'},
+                  {name:'Casanova Di Neri', img:'brands/casanova.png', url:'http://www.casanovadineri.it/'},
+                  {name:'Cecchi', img:'brands/cecchi.png', url:'http://cecchi.net/'},
+                  {name:'Casale del Giglio', img:'brands/casale.png', url:'http://www.casaledelgiglio.it/en/'},
+                  {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
+                  {name:'Fantinel', img:'brands/fantinel.png', url:'http://www.fantinel.com/'},
+                  {name:'Farnese', img:'brands/farnese.png', url:'http://www.farnesevini.it/'},
+                  {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
+                  {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
+                  {name:'Maschio', img:'brands/maschio.png', url:'http://www.cantinemaschio.it/'},
+                  {name:'Mazzei', img:'brands/mazzei.png', url:'http://www.mazzei.it/'},
+                  {name:'Planeta', img:'brands/planeta.png', url:'http://www.planeta.it/'},
+                  {name:'Riunite', img:'brands/riunite.png', url:'#'},
+                  {name:'Rustichella', img:'brands/rustichella.png', url:'#'},
+                  {name:'Vesevo', img:'brands/vesevo.png', url:'http://www.farnesevini.it/vesevo_azienda'},
+                  {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
+                ] %>
+      <% brands.each do |brand| %>
+        <div class="col-sm-3 col-xs-6">
+          <a href="<%= brand[:url] %>" target="_blank">
+            <%= image_tag(brand[:img], alt: brand[:name], width:180) %>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div><!-- /.companies -->
