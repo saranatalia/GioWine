@@ -1,0 +1,3 @@
+tmp/cache/assets/*
+log/development.log
+tmp/pids/server.pid

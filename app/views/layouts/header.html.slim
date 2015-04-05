@@ -1,0 +1,36 @@
+header
+  //Navbar
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle.collapsed type="button" toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        ul.nav.navbar-nav.navbar-left
+          li.logo
+            a.navbar-brand href="index.html" = image_tag("vrais_logo.png", :alt => "Giowine")
+          li#italianlink The Italian link to the Americas <span class="glyphicon glyphicon-globe" aria-hidden="true">
+      //Collect the nav links, forms, and other content for toggling
+      .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a href="wine.html"
+              | <span class="glyphicon glyphicon-glass" aria-hidden="true"></span> Products
+          li.dropdown
+            a.dropdown-toggle href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+              | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> News & Events
+            ul.dropdown-menu role="menu"
+              li
+                a href="#" In the Press
+              li
+                a href="#" = "What's New"
+              li
+                a href="#" Calendar
+          li
+            a href="contact.html"
+              | <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact
+          li
+            a href="#"
+              | <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Español

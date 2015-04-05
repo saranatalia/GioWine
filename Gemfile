@@ -32,6 +32,7 @@ gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'newrelic_rpm', group: :production
 
+gem 'slim'
 
 
 group :development, :test do
