@@ -11,4 +11,12 @@ class HomeController < ActionController::Base
     @title = 'Welcome to GioWine'
   end
 
+  def wine
+    @title = 'GioWine > wine'
+  end
+
+  def contact
+    @title= "Giowine > contact"
+  end
+
 end

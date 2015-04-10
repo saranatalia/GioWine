@@ -11,8 +11,8 @@
 </head>
 <body>
   <%= render file:'layouts/header' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= yield %>
   <%= render file:'layouts/footer' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

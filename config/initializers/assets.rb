@@ -11,6 +11,9 @@ Rails.application.config.assets.precompile += %w(
                                                   main.css
                                                   bootstrap.css
                                                   bootstrap.js
+                                                  underscore-min.js
+                                                  leaflet.awesome-markers.js
+                                                  wine.js
                                                 )
 
 Rails.application.config.assets.precompile += %w( .svg .eot .woff .ttf)
