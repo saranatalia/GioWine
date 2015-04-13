@@ -4,9 +4,9 @@
 
 
 body {
-  color: rgba(141,32,54, 0.9);
+  color: black;
   /*background: rgb(228,228,197);*/
-  background-image: asset-url('bg/3.jpg'); /* add a fallback color of #d6d6d6 */
+  background: lightgrey; /* add a fallback color of #d6d6d6 */
   background-repeat: repeat-y;
   background-position: -50px -155px;
   padding-top: 50px;
@@ -32,7 +32,12 @@ header {
 
 footer {
   margin: 20px;
-  text-align: center
+  text-align: center;
+  display: block;
+
+  margin: 0;
+
+
 }
 
 footer p {
@@ -52,19 +57,22 @@ h3 {
   border-radius: 100px;
 }
 
-
+h2 {
+  font-family: 'Cinzel';
+  text-align: center;
+}
 
 .blurb hr {
   margin-bottom: 5px;
   margin-top: -10px;
   margin-right: 0px;
-  border-color: rgb(228,228,197)
+
 }
 
 hr {
   margin-bottom: 10px;
   margin-top: -5px;
-  border-color: rgba(141,32,54, 0.9);
+  border-color: black;
   margin-right: 100px;
 }
 
@@ -91,10 +99,10 @@ a:focus {
  text-decoration: none;
 }
 
-.carousel {
+/*.carousel {
   border-top: 10px solid rgba(141,32,54, 0.9);
   border-bottom: 10px solid rgba(141,32,54, 0.9) ;
-}
+}*/
 
 footer a {
   color: rgba(141,32,54, 0.9) !important;
@@ -103,6 +111,10 @@ footer a {
 footer a:hover {
   color: black !important;
 }
+
+
+
+
 /*-----------------------------------------------------------------------------
 =NAVBAR
 -----------------------------------------------------------------------------*/
@@ -118,11 +130,13 @@ footer a:hover {
 
 
 .navbar-default .navbar-nav > li > a {
-  color: rgb(228,228,197);
+  color: white;
+
 }
 
 .navbar-default .navbar-nav > li.active > a {
   background: inherit !important;
+  text-decoration: underline !important;
   color: black !important;
 }
 
@@ -195,9 +209,7 @@ ul.nav a:focus {
 }
 
 .blurb {
-  background: rgba(141,32,54,0.9);
-  color: rgb(228,228,197) !important;
-  border-radius: 10px;
+
   padding: 15px;
 }
 
@@ -219,7 +231,7 @@ ul.nav a:focus {
 }
 
 .jumbotron {
-  background: none;
+  background: white;
   margin-top: -50px;
 
 }
@@ -268,6 +280,7 @@ ul.nav a:focus {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
+  color: white;
 }
 
 #brand {
@@ -284,15 +297,47 @@ ul.nav a:focus {
   cursor: pointer;
 }
 
+#territory {
+  font-family: 'Cinzel';
+}
 
 /*-----------------------------------------------------------------------------
 =CONTACT PAGE
 -----------------------------------------------------------------------------*/
 
 #contactbody .container {
+   background: rgba(141,32,54,0.9);
+  color: rgb(228,228,197);
+  padding-left: 30px;
+  border-radius: 10px;
+
+}
+
+#contactbody .container hr {
+  border-color: rgb(228,228,197);
+  margin-top: 10px;
+
+}
+
+#contactbody .panel-body {
   background: rgba(141,32,54,0.9);
   color: rgb(228,228,197);
-  border-radius: 10px;
+  padding-left: 30px;
+}
+
+#contactbody .panel {
+  border: rgba(141,32,54,0.9);
+}
+
+#contactbody .panel-heading {
+  background: rgb(141,32,54);
+  color: rgb(228,228,197);
+  padding-left: 30px;
+}
+
+#contactbody .panel-footer {
+  background: rgb(141,32,54);
+  color: rgb(228,228,197);
   padding-left: 30px;
 }
 
@@ -334,32 +379,40 @@ ul.nav a:focus {
 
 
 .try {
-  background-image: asset-url('bottle.jpg');
-  position: relative;
-  /*---WHY DOESNT THIS EFFECT WORK?^^ -----------------*/
-  padding-top: 8%;
-  padding-right: 0px;
-  padding-bottom: 8%;
-  padding-left: 0px;
-  height: 200px;
+background-image: asset-url('bottle.jpg');
+position: relative;
+/*---WHY DOESNT THIS EFFECT WORK?^^ -----------------*/
+padding-top: 8%;
+padding-right: 0px;
+padding-bottom: 8%;
+padding-left: 0px;
+height: 200px;
+
 }
 
 .bg {
-  background-image: asset-url('bottle.jpg');
-  background-repeat: no-repeat;
-  background-position: 50% 0px;
-  height: 200px;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+background-image: asset-url('bottle.jpg');
+background-repeat: no-repeat;
+background-position: 50% 0px;
+height: 200px;
+-moz-transition: all 0.3s ease-out;
+-ms-transition: all 0.3s ease-out;
+-o-transition: all 0.3s ease-out;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
 }
 
 .contact1 {
   background-color: red;
 }
 
+.team {
+  margin: 0px 30px;
+}
+
+.team p {
+  text-decoration: bold;
+}
 
 /*-----------------------------------------------------------------------------
 =MODAL
@@ -380,8 +433,11 @@ ul.nav a:focus {
 .modal-title {
   font-weight: bold;
 }
+.modal-body img.center1 {
+  margin: 0 auto;
+}
 
-.modal-body img {
+.modal-body img.full {
   width: 100%;
   padding-bottom: 15px;
 
@@ -410,6 +466,13 @@ ul.nav a:focus {
   font-style: italic;
 }
 
+#the_wines p:hover {
+  color: black;
+}
+
+#the_foods p:hover {
+  text-decoration: underline;
+}
 
 /*-----------------------------------------------------------------------------
 =DIVS
@@ -430,4 +493,12 @@ ul.nav a:focus {
 .box {
   background: rgb(228,228,197);
   border: 2px solid rgba(141,32,54, 0.9);
+}
+
+.panel-footer .main_office {
+  display: block;
+}
+
+.panel-footer .other_offices {
+  display: block;
 }
