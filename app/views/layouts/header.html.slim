@@ -22,11 +22,11 @@ header
             a.dropdown-toggle href="#" data-toggle="dropdown" role="button" aria-expanded="false"
               | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> News & Events
             ul.dropdown-menu role="menu"
-              li
+              li class="#{'active' if request.fullpath == press_path}"
                 a href="#{press_path}" In the Press
-              li
+              li class="#{'active' if request.fullpath == news_path}"
                 a href="#{news_path}" = "What's New"
-              li
+              li class="#{'active' if request.fullpath == calendar_path}"
                 a href="#{calendar_path}" Calendar
           li class="#{'active' if request.fullpath == contact_path}"
             a href="#{contact_path}"

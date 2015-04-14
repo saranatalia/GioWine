@@ -134,9 +134,10 @@ footer a:hover {
 
 }
 
+.dropdown-menu li.active > a,
 .navbar-default .navbar-nav > li.active > a {
   background: inherit !important;
-  text-decoration: underline !important;
+  text-decoration: none !important;
   color: black !important;
 }
 
