@@ -8,12 +8,26 @@ Rails.application.config.assets.version = '1.0'
 
 Rails.application.config.assets.precompile += %w(
                                                   leaflet.awesome-markers.css
-                                                  main.css
                                                   bootstrap.css
                                                   bootstrap.js
                                                   underscore-min.js
                                                   leaflet.awesome-markers.js
                                                   wine.js
+
+                                                  calendar.css
+                                                  contact.css
+                                                  index.css
+                                                  news.css
+                                                  press.css
+                                                  wine.css
+
+                                                  calendar.js
+                                                  contact.js
+                                                  index.js
+                                                  news.js
+                                                  press.js
+                                                  wine.js
+
                                                 )
 
 Rails.application.config.assets.precompile += %w( .svg .eot .woff .ttf)

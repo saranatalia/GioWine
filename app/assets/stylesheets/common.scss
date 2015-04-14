@@ -6,7 +6,6 @@
 body {
   color: black;
   /*background: rgb(228,228,197);*/
-  background-color: lightgrey; /* add a fallback color of #d6d6d6 */
   background-repeat: repeat-y;
   background-position: -50px -155px;
   padding-top: 50px;
@@ -32,8 +31,10 @@ header {
 
 footer {
   margin: 20px;
+  padding:20px;
   text-align: center;
   display: block;
+  background-color: lightgrey; /* add a fallback color of #d6d6d6 */
 
   margin: 0;
 

@@ -12,6 +12,6 @@
  *
  *
  *= require bootstrap
- *= require main
+ *= require common
  *= require_self
  */
