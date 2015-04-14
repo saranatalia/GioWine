@@ -23,11 +23,11 @@ header
               | <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> News & Events
             ul.dropdown-menu role="menu"
               li
-                a href="#" In the Press
+                a href="#{press_path}" In the Press
               li
-                a href="#" = "What's New"
+                a href="#{news_path}" = "What's New"
               li
-                a href="#" Calendar
+                a href="#{calendar_path}" Calendar
           li class="#{'active' if request.fullpath == contact_path}"
             a href="#{contact_path}"
               | <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact

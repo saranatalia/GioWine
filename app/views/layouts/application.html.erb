@@ -8,13 +8,13 @@
   <meta name="description" content="GioWine">
   <%= stylesheet_link_tag   'application',
                             'http://fonts.googleapis.com/css?family=Cinzel',
-                            media: 'all', 'data-turbolinks-track' => true %>
+                            media: 'all'%>
   <%= csrf_meta_tags %>
 
 </head>
 <body>
   <%= render file:'layouts/header' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
   <%= yield %>
   <%= render file:'layouts/footer' %>
 </body>

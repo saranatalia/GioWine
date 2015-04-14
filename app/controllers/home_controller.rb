@@ -12,11 +12,24 @@ class HomeController < ActionController::Base
   end
 
   def wine
-    @title = 'GioWine > wine'
+    @title = 'GioWine > Wine'
   end
 
   def contact
-    @title= "Giowine > contact"
+    @title = "Giowine > Contact"
   end
+
+  def press
+    @title = "Giowine > Press"
+  end
+
+  def news
+    @title = "Giowine > News"
+  end
+
+  def calendar
+    @title = "Giowine > Calendar"
+  end
+
 
 end

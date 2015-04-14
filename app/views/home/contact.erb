@@ -14,19 +14,20 @@
 </div>
 
 <div class="team">
- <br>
- <p>Together we proudly grow your brands throughout the American continents with spirit, dedication, and ______. **Giowine is located on site, in five different countries, with experience and expertise in ___ markets.** Each member speaks at least two languages, and we each contribute a different area of expertise to the team, from oneology, to marketing, to sales. What we all share in common is a passion for wine…</p>
+  <br>
+  <p>
+    Together we proudly grow your brands throughout the American continents with spirit, dedication, and ______. **Giowine is located on site, in five different countries, with experience and expertise in ___ markets.** Each member speaks at least two languages, and we each contribute a different area of expertise to the team, from oneology, to marketing, to sales. What we all share in common is a passion for wine…
+  </p>
 </div>
 
-<div class="jumbotron" id="nospace">
+<div class="jumbotron">
 
 
 
- <div class="container">
-
-  <br>
-  <div class="row">
-    <% people = [
+  <div class="container">
+    <br>
+    <div class="row">
+      <% people = [
         {
           picture: 'contacts/giovanni.jpg',
           name: 'Giovanni Cardullo',
@@ -127,18 +128,18 @@
           }
         },
 
-      ]  %>
+        ]  %>
       <% people.each do |person| %>
-        <div class="col-md-3">
-          <div class="contact">
-            <%= image_tag person[:picture] %>
-            <p class="bold"><%= person[:name] %></p>
-            <p><%= person[:title] %></p>
-            <p>
-              <a href="<%= person[:mail][:link] %>"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><%= person[:mail][:mail] %></a>
-            </p>
-          </div>
+      <div class="col-md-3">
+        <div class="contact">
+          <%= image_tag person[:picture] %>
+          <p class="bold"><%= person[:name] %></p>
+          <p><%= person[:title] %></p>
+          <p>
+            <a href="<%= person[:mail][:link] %>"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><%= person[:mail][:mail] %></a>
+          </p>
         </div>
+      </div>
       <% end %>
 
       <div class="col-md-3"></div>
@@ -150,53 +151,54 @@
 
 
 
-<div id="box">
-  <h2 class="bold">contact</h2>
-  <hr>
-</div>
-<div class="container">
-  <div class="col-md-6">
-    <div class="main_office">
-      <h3>Main Office</h3>
-
-      <p>5580 La Jolla Blvd. #396</p>
-      <p>La Jolla, CA</p>
-      <p>92037</p>
-      <br>
-
-
-      <p><span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-
-      <p><span class="glyphicon glyphicon-print"></span> 858 452 2820</p>
-    </div>
-  </div>
-  <div class="col-md-6">
-   <div class="other_offices">
-    <h3 class="center">Reach our Other Offices</h3>
+  <div id="box">
+    <h2 class="bold">contact</h2>
     <hr>
-    <h4 class="center"><strong>Argentina</strong> <span class="glyphicon glyphicon-earphone"> </span> 858 452 7499</p>
+  </div>
+  <div class="container">
+    <div class="col-md-6">
+      <div class="main_office">
+        <h3>Main Office</h3>
 
-      <h4 class="center"><strong>Brazil</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-
-        <h4 class="center"> <strong>Caribbean</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-
-          <h4 class="center"><strong>Florida, USA</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-
-            <h4 class="center"><strong>Guatemala</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-            </div>
-          </div>
-          <br>
-          <br>
-          <p class="center"><strong>For general questions, email us at <a href="mailto:info@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Hello, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.">info@giowine.com</a></strong></p>
-
-        </div>  <!-- /row -->
-
-      </div>  <!-- /container -->
-
-    </div><!-- /end footer-->
+        <p>5580 La Jolla Blvd. #396</p>
+        <p>La Jolla, CA</p>
+        <p>92037</p>
+        <br>
 
 
+        <p><span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
 
+        <p><span class="glyphicon glyphicon-print"></span> 858 452 2820</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="other_offices">
+        <h3 class="center">Reach our Other Offices</h3>
+        <hr>
+        <p class="center">
+          <strong>Argentina</strong> <span class="glyphicon glyphicon-earphone"> </span> 858 452 7499
+        </p>
+        <p class="center">
+          <strong>Brazil</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+        </p>
+        <p class="center">
+          <strong>Caribbean</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+        </p>
+        <p class="center">
+          <strong>Florida, USA</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+        </p>
+        <p class="center">
+          <strong>Guatemala</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p class="center">
+      <strong>
+        For general questions, email us at <a href="mailto:info@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Hello, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.">info@giowine.com</a>
+      </strong>
+    </p>
 
-  </div><!-- /Jumbotron-->
-
+  </div>  <!-- /container -->
+</div> <!-- /jumbotron >-->
