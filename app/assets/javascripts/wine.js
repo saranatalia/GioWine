@@ -17,6 +17,14 @@ var Thunderforest_Outdoors = L.tileLayer('http://{s}.tile.thunderforest.com/outd
                 maxZoom: 16
               }).addTo(map);
 
+//ORIGINAL
+ // var Stamen_Watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+//   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+//   subdomains: 'abcd',
+//   minZoom: 1,
+//   maxZoom: 16
+// }).addTo(map);
+
 
 var markers_data = {
   planeta:      {name: 'planeta',     coord:[37.8816289,15.1218875],  modal:'#myModal',   icon:{type:'glyphicon-glass',   color:'darkpurple'}, marker:null},
