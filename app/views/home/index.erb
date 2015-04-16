@@ -3,6 +3,8 @@
 media: 'all' %>
 <%= javascript_include_tag  '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js',
 media: 'all' %>
+<%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Cinzel' %>
+
 
 <div class="jumbotron">
   <div class="container center">
@@ -170,21 +172,22 @@ media: 'all' %>
     <div class="partners" id="close">
       <% brands = [
         {name:'Batasiolo', img:'brands/batasiolo.png', url:'http://www.batasiolo.com/'},
+        {name:'Casale del Giglio', img:'brands/casale.png', url:'http://www.casaledelgiglio.it/en/'},
         {name:'Casanova Di Neri', img:'brands/casanova.png', url:'http://www.casanovadineri.it/'},
         {name:'Cecchi', img:'brands/cecchi.png', url:'http://cecchi.net/'},
-        {name:'Casale del Giglio', img:'brands/casale.png', url:'http://www.casaledelgiglio.it/en/'},
-        {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
         {name:'Fantinel', img:'brands/fantinel.png', url:'http://www.fantinel.com/'},
-        {name:'Farnese', img:'brands/farnese.png', url:'http://www.farnesevini.it/'},
-        {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
-        {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
+        {name:'Farnese', img:'brands/farnese.png', url:'http://www.farnesevini.it/'}      
         {name:'Maschio', img:'brands/maschio.png', url:'http://www.cantinemaschio.it/'},
+        {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
         {name:'Mazzei', img:'brands/mazzei.png', url:'http://www.mazzei.it/'},
         {name:'Planeta', img:'brands/planeta.png', url:'http://www.planeta.it/'},
         {name:'Riunite', img:'brands/riunite.png', url:'#'},
-        {name:'Rustichella', img:'brands/rustichella.png', url:'#'},
         {name:'Vesevo', img:'brands/vesevo.png', url:'http://www.farnesevini.it/vesevo_azienda'},
-        {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
+        {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
+        {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
+        {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
+        {name:'Rustichella', img:'brands/rustichella.png', url:'#'},    
+        
         ] %>
         <% brands.each do |brand| %>
         <div class="col-sm-3 col-xs-6">
