@@ -13,6 +13,8 @@ Rails.application.config.assets.precompile += %w(
                                                   underscore-min.js
                                                   leaflet.awesome-markers.js
                                                   wine.js
+                                                  bootstrap-modal-carousel.js
+                                                  bootstrap-modal-carousel.css
 
                                                   calendar.css
                                                   contact.css
