@@ -1,16 +1,83 @@
-<div class="try">
-</div>
-
-
-<br>
-<br>
+<!-- <div class="try">
+</div> -->
+<!-- <br>
+<br> -->
 
 <h1>Contact</h1>
 
 
+
+
+<div class="jumbotron">
+
 <div id="box">
-  <h2 class="bold">meet our team</h2>
+  
+    <hr>
+  </div>
+
+ <div class="row"> 
+            <div class="container">
+             <div class="col-md-3">
+             </div>
+              <div class="col-md-3">
+                <div class="main_office">
+                  <h4>Main Office</h4>
+
+                  <p>5580 La Jolla Blvd. #396</p>
+                  <p>La Jolla, CA</p>
+                  <p>92037</p>
+                  <br>
+
+
+                  <p><span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
+
+                  <p><span class="glyphicon glyphicon-print"></span> 858 452 2820</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="other_offices">
+                  <h4 class="center">Reach our Other Offices</h4>
+             
+                  <p class="center">
+                    <strong>Argentina</strong> <span class="glyphicon glyphicon-earphone"> </span> 858 452 7499
+                  </p>
+                  <p class="center">
+                    <strong>Brazil</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+                  </p>
+                  <p class="center">
+                    <strong>Caribbean</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+                  </p>
+                  <p class="center">
+                    <strong>Florida, USA</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+                  </p>
+                  <p class="center">
+                    <strong>Guatemala</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
+                  </p>
+                </div>
+              </div>
+               <div class="col-md-2">
+             </div>
+     </div>        
+    <br>
+    <br>
+    <div class="row">
+    <div class="container">
+      <p class="center">
+        <strong>
+          For general questions, email us at <a href="mailto:info@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Hello, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.">info@giowine.com</a>
+        </strong>
+      </p>
+    </div>
+    </div>
+    <br>
+
+
+  </div>  <!-- /container -->
+
+<div id="box">
+
   <hr>
+    <h2 class="bold">meet our team</h2>
 </div>
 
 <div class="team">
@@ -19,10 +86,7 @@
     Together we proudly grow your brands throughout the American continents with spirit, dedication, and ______. **Giowine is located on site, in five different countries, with experience and expertise in ___ markets.** Each member speaks at least two languages, and we each contribute a different area of expertise to the team, from oneology, to marketing, to sales. What we all share in common is a passion for wine…
   </p>
 </div>
-
-<div class="jumbotron">
-
-
+<br>
 
   <div class="container">
     <br>
@@ -85,7 +149,7 @@
         {
           picture: 'contacts/stefano.jpg',
           name: 'Stefano Poggi',
-          title: 'Area Manager for west coast',
+          title: 'Area Manager for USA West Coast',
           mail: {
             link: "mailto:stefano@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Dear Stefano, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.",
             email: 'stefano@giowine.com'
@@ -94,7 +158,7 @@
         {
           picture: 'contacts/carlo.jpg',
           name: 'Carlo Anthony Guzman',
-          title: 'Brand Manager for west coast',
+          title: 'Brand Manager for USA West Coast',
           mail: {
             link: "mailto:carlo@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Dear Carlo, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.",
             email: 'carlo@giowine.com'
@@ -121,7 +185,7 @@
         {
           picture: 'contacts/sara.jpg',
           name: 'Sara Cardullo',
-          title: 'Marketing Assistant & Web Master',
+          title: 'Project Leader for French Wines',
           mail: {
             link: "mailto:sara@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Dear Sara, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.",
             email: 'sara@giowine.com'
@@ -133,11 +197,9 @@
       <div class="col-md-3">
         <div class="contact">
           <%= image_tag person[:picture] %>
-          <p class="bold"><%= person[:name] %></p>
+          <p class="bold"><%= person[:name] %> <a href="<%= person[:mail][:link] %>"> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><%= person[:mail][:mail] %></a></p>
           <p><%= person[:title] %></p>
-          <p>
-            <a href="<%= person[:mail][:link] %>"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><%= person[:mail][:mail] %></a>
-          </p>
+          
         </div>
       </div>
       <% end %>
@@ -151,56 +213,7 @@
 
 
 
-  <div id="box">
-    <h2 class="bold">contact</h2>
-    <hr>
-  </div>
-  <div class="container">
-    <div class="col-md-6">
-      <div class="main_office">
-        <h3>Main Office</h3>
-
-        <p>5580 La Jolla Blvd. #396</p>
-        <p>La Jolla, CA</p>
-        <p>92037</p>
-        <br>
-
-
-        <p><span class="glyphicon glyphicon-earphone"></span> 858 452 7499</p>
-
-        <p><span class="glyphicon glyphicon-print"></span> 858 452 2820</p>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="other_offices">
-        <h3 class="center">Reach our Other Offices</h3>
-        <hr>
-        <p class="center">
-          <strong>Argentina</strong> <span class="glyphicon glyphicon-earphone"> </span> 858 452 7499
-        </p>
-        <p class="center">
-          <strong>Brazil</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
-        </p>
-        <p class="center">
-          <strong>Caribbean</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
-        </p>
-        <p class="center">
-          <strong>Florida, USA</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
-        </p>
-        <p class="center">
-          <strong>Guatemala</strong> <span class="glyphicon glyphicon-earphone"></span> 858 452 7499
-        </p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <p class="center">
-      <strong>
-        For general questions, email us at <a href="mailto:info@giowine.com?cc=info@giowine.com.com&subject=More%20information%20about%20Giowine&body=Hello, %0A%0AI came across your website and I'm interested in more information about Giowine, Inc.">info@giowine.com</a>
-      </strong>
-    </p>
-
-  </div>  <!-- /container -->
+  
 </div> <!-- /jumbotron >-->
 
 <%= stylesheet_link_tag 'contact',    media: 'all' %>

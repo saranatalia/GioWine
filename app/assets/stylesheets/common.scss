@@ -90,15 +90,7 @@ h2 {
 }
 
 
-a:hover {
 
- text-decoration: underline;
-}
-
-a:focus {
- color: black !important;
- text-decoration: underline;
-}
 
 /*.carousel {
   border-top: 10px solid rgba(141,32,54, 0.9);
@@ -138,10 +130,14 @@ footer a:hover {
 .dropdown-menu li.active > a,
 .navbar-default .navbar-nav > li.active > a {
   background: inherit !important;
-  text-decoration: underline !important;
+  color: gray;
 }
 
-
+.dropdown-menu li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:hover, {
+text-decoration: none !important;
+color: gray !important;
+}
 .dropdown-menu a {
   background: rgba(141,32,54, 0.9);
 }
@@ -157,11 +153,13 @@ nav img {
 }
 
 ul.nav a:hover {
- color: black !important;
+ text-decoration: underline !important;
+ color: white !important;
 }
 
 ul.nav a:focus {
- color: black !important;
+ text-decoration: underline !important;
+ color: white !important;
 }
 
 
@@ -262,8 +260,8 @@ ul.nav a:focus {
 }
 
 #map2 {
-  height: 580px;
-  width: 600px;
+  height: 635px;
+  width: 580px;
 }
 
 #nospace {
@@ -290,11 +288,12 @@ ul.nav a:focus {
 
 
 #black {
-  color: black;
+  color: rgba(141,32,54,0.9);
+  text-decoration: bold;
 }
 
 #black:hover {
-  color: rgb(228,228,197);
+  color: black;
   cursor: pointer;
 }
 
@@ -368,7 +367,8 @@ ul.nav a:focus {
 
 .contact img {
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
+  border-radius: 120px;
 }
 
 #contactbody .contact p {
@@ -468,11 +468,13 @@ transition: all 0.3s ease-out;
 }
 
 #the_wines p:hover {
-  color: black;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #the_foods p:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /*-----------------------------------------------------------------------------
