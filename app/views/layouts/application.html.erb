@@ -15,7 +15,9 @@
 <body>
   <%= render file:'layouts/header' %>
   <%= javascript_include_tag 'application' %>
-  <%= yield %>
+  <div id="saracontent">
+    <%= yield %>
+  </div>
   <%= render file:'layouts/footer' %>
 </body>
 </html>
