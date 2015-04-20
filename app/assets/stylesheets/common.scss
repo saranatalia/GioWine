@@ -3,19 +3,19 @@
 -----------------------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'Wine Tasting';
-  src:  font-url('wine-tasting-icon.eot');
-  src:  font-url('wine-tasting-icon.eot?#iefix') format('embedded-opentype'),
-        font-url('wine-tasting-icon.woff') format('woff'),
-        font-url('wine-tasting-icon.ttf') format('truetype'),
-        font-url('wine-tasting-icon.svg#wine_tastingicon') format('svg');
+  font-family: 'Wine Glass';
+  src:  font-url('wine-glass.eot');
+  src:  font-url('wine-glass.eot?#iefix') format('embedded-opentype'),
+        font-url('wine-glass.woff') format('woff'),
+        font-url('wine-glass.ttf') format('truetype'),
+        font-url('wine-glass.svg#wine_tastingicon') format('svg');
 }
 .glyphicon-wine_tasting,
 .wine_tasting {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Wine Tasting';
+  font-family: 'Wine Glass';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
