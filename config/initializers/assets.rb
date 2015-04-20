@@ -22,6 +22,7 @@ Rails.application.config.assets.precompile += %w(
                                                   news.css
                                                   press.css
                                                   wine.css
+                                                  
 
                                                   calendar.js
                                                   contact.js

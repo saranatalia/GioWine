@@ -24,29 +24,41 @@
             <div class="row">
               <div class="col-md-12">
                 <p>
-                  Giowine represents a varied portfolio of nationally renowned quality Italian wines from all over the country. Each region of Italy embodies a unique character due to the diverse micro climates, the particularly adapted grape varieties, and the traditional regional styles of wine-making. You can learn more by exploring our map and clicking on the brand icons.  Brand information comes straight from the horse’s mouth, for a closer look we invite you to check out the producer sites!
+                  Giowine represents a varied portfolio of nationally renowned quality Italian wines from all over the country. Each region of Italy embodies a unique character due to the diverse micro climates, the particularly adapted grape varieties, and the traditional regional styles of wine-making. You can learn more by exploring our map and clicking on the icons.  Brand information comes straight from the producer, for a closer look we invite you to check out their websites!
                 </p>
               </div>
             </div>
             <br>
             <div id="the_wines" class="row font">
               <div class="col-md-5">
-                <p class="bold" data-name="planeta" >Planeta</p>
-                <p class="bold" data-name="batasiolo" >Batasiolo</p>
-                <p class="bold" data-name="mazzei" >Mazzei</p>
-                <p class="bold" data-name="lazzaroni" >Lazzaroni</p>
-                <p class="bold" data-name="riunite" >Riunite</p>
-                <p class="bold" data-name="fantinel" >Fantinel</p>
-                <p class="bold" data-name="vesevo" >Vesevo</p>
+                <p class="bold hvr-underline-from-center" data-name="planeta" >Planeta</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="batasiolo" >Batasiolo</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="mazzei" >Mazzei</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="lazzaroni" >Lazzaroni</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="riunite" >Riunite</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="fantinel" >Fantinel</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="vesevo" >Vesevo</p>
               </div>
               <div class="col-md-7">
-                <p class="bold" data-name="maschio" >Maschio</p>
-                <p class="bold" data-name="masi" >Masi</p>
-                <p class="bold" data-name="farnese" >Farnese</p>
-                <p class="bold" data-name="cecchi" >Cecchi</p>
-                <p class="bold" data-name="casanova" >Casanova di Neri</p>
-                <p class="bold" data-name="casale" >Casale del Giglio</p>
-                <p class="bold" data-name="roncaia" >La Roncaia</p>
+                <p class="bold hvr-underline-from-center" data-name="maschio" >Maschio</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="masi" >Masi</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="farnese" >Farnese</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="cecchi" >Cecchi</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="casanova" >Casanova di Neri</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="casale" >Casale del Giglio</p>
+                <br>
+                <p class="bold hvr-underline-from-center" data-name="roncaia" >La Roncaia</p>
               </div>
             </div><!--/endrow-->
 
@@ -59,13 +71,16 @@
           <hr>
             <h2>food</h2>
             
-            <p>In XXXX we began our GioFood brand. We represent a small but rich collection of products including Italy's number one sparkling water, choice artisinal pasta of top international chefs, olive oil cultivated on the Sicilian seaside, and the original amaretti cookies since XXXX. Buon appetito!</p>
+            <p>We represent a small but rich collection of food products and non-alcoholic beverages including Italy's number one sparkling water, choice artisinal pasta of top international chefs, olive oil cultivated on the Sicilian seaside, and the original amaretti cookies since XXXX. Buon appetito!</p>
             <br>
             <div id="the_foods" class="row font">
-              <p data-name="amaretti" >Amaretti del Chiostro</p>
-              <p data-name="olio" >Planeta Olive Oil</p>
-              <p data-name="rustichella" >Rustichella Pasta Artigianale</p>
-              <p data-name="ferrarelle" >Ferrarelle Mineral Water</p>
+              <p class="hvr-underline-from-center" data-name="amaretti" >Amaretti del Chiostro</p>
+              <br>
+              <p class="hvr-underline-from-center" data-name="olio" >Planeta Olive Oil</p>
+              <br>
+              <p class="hvr-underline-from-center" data-name="rustichella" >Rustichella Pasta Artigianale</p>
+             <br>
+              <p class="hvr-underline-from-center" data-name="ferrarelle" >Ferrarelle Mineral Water</p>
             </div><!--/endrow-->
 
           </div>
@@ -347,8 +362,12 @@
               quote: "This is a place for contemplation and experience accumulated during the slow passage of the seasons, where each day-to-day act takes on the sacredness of a ritual. Close to the exclusive vineyards in Cergneu di Nimis stands La Roncaia cellar, where life proceeds in complete harmony with the surroundings."
             },
             {
-              html: %W(
-                      <p>Some new stuff</p>
+              html: 
+
+              %W(    <h4> Featured Product: Friulano</h4>
+                #{image_tag("featured/roncaia.jpg", alt:"La Roncaia Friulano Wine", :class => "featured")}
+                      <p>Composition:</p>
+                      <p>Awards:</p>
                       ).join(' '),
               caption: "222222222222222222222",
               quote: "3333333333333333333333"
