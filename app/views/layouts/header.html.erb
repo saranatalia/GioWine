@@ -1,0 +1,26 @@
+<div id="header" class="fixed">
+  <div class="big">
+    <%= link_to root_path do %> <%= image_tag('the_big_logo_compress.png', alt: 'Giowine logo') %> <% end %>
+    <p>the Italian link to the Americas</p>
+    
+  </div>
+  <div class="small">
+      <%= link_to root_path do %> <%= image_tag('small_logo_compress.png', alt: 'Giowine logo') %> <% end %>
+  </div>
+  <nav>
+    <div class="flexrow center">
+      <div class="element">
+       <%= link_to wine_path, :class => "hvr-underline-from-center" do %> Products <% end %>
+      </div>
+      <div class="element">
+         <%= link_to contact_path, :class => "hvr-underline-from-center" do %> Contact <% end %>
+      </div>
+      <div class="element">
+        <%= link_to contact_path, :class => "hvr-underline-from-center" do %> Español <% end %>
+      </div>
+    </div>
+  </nav>
+
+
+</div>
+

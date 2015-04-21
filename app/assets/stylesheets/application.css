@@ -15,3 +15,108 @@
  *= require common
  *= require_self
  */
+
+#header {
+  background-color: white;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
+}
+
+.big {
+  text-align: center;
+  height: 100px;
+  font-size: 2em;
+}
+
+.big img {
+  height: 130px;
+  margin: -30px;
+}
+
+.big p {
+  font-size: 16px;
+  color: grey;
+  margin-top: -10px;
+  letter-spacing: 4px;
+  font-style: italic;
+  text-decoration: bold;
+}
+
+.small {
+  height: 50px;
+  display: none;
+  text-align: center;
+}
+
+.small img {
+  height: 70px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+.fixed .big {
+  display: none;
+}
+
+.fixed .small {
+  display: block;
+}
+
+.flexrow {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: baseline;
+  -webkit-align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%
+}
+
+.flexrow.center {
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center
+}
+
+article {
+  width: 100%
+}
+
+.element {
+  min-height: 20px;
+  background-color: white;
+  width: 220px;
+  text-align: center;
+}
+
+.element a {
+  font-family: Cinzel, Georgia;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.element a:hover {
+  text-decoration: none;
+}
+
+.name {
+  color: #47525E;
+  font-weight: light;
+  font-size: 1.5em;
+  text-transform: uppercase
+}
