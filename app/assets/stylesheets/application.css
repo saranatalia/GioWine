@@ -20,7 +20,12 @@
   background-color: white;
   width: 100%;
   z-index: 9999999;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+
 }
+
+
 
 .fixed {
   position: fixed;
@@ -51,7 +56,10 @@
   height: 50px;
   display: none;
   text-align: center;
+
 }
+
+
 
 .small img {
   height: 70px;
@@ -65,6 +73,7 @@
 
 .fixed .small {
   display: block;
+
 }
 
 .flexrow {
@@ -107,11 +116,15 @@ article {
   font-family: Cinzel, Georgia;
   font-weight: bold;
   font-size: 16px;
-  color: black;
+  color: rgba(141,32,54, 0.9);
 }
 
 .element a:hover {
   text-decoration: none;
+}
+
+.element a:active {
+  color: grey;
 }
 
 .name {
