@@ -9,13 +9,13 @@
   <nav>
     <div class="flexrow center">
       <div class="element">
-       <%= link_to wine_path, :class => "hvr-underline-from-center" do %> Products <% end %>
+       <%= link_to 'Products', wine_path, :class => "hvr-underline-from-center #{'active' if request.fullpath == wine_path }" %>
       </div>
       <div class="element">
-         <%= link_to contact_path, :class => "hvr-underline-from-center" do %> Contact <% end %>
+         <%= link_to 'Contact', contact_path, :class => "hvr-underline-from-center #{'active' if request.fullpath == contact_path }"  %>
       </div>
       <div class="element">
-        <%= link_to contact_path, :class => "hvr-underline-from-center" do %> Español <% end %>
+        <%= link_to 'Español', contact_path, :class => "hvr-underline-from-center" %>
       </div>
     </div>
   </nav>

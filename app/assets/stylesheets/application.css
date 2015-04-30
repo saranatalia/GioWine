@@ -112,7 +112,7 @@ article {
 .element {
   min-height: 20px;
   background-color: white;
- 
+
   text-align: center;
 }
 
@@ -127,7 +127,7 @@ article {
   text-decoration: none;
 }
 
-.element a:active {
+.element a.active {
   color: grey;
 }
 
