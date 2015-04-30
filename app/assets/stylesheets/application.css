@@ -131,6 +131,12 @@ article {
   color: grey;
 }
 
+.hvr-underline-from-center.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+
 .name {
   color: #47525E;
   font-weight: light;
