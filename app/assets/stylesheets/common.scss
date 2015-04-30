@@ -201,7 +201,7 @@ footer a:hover {
 .dropdown-menu li.active > a,
 .navbar-default .navbar-nav > li.active > a {
   background: inherit !important;
-  
+
 }
 
 .dropdown-menu li.active > a:hover,
@@ -675,7 +675,10 @@ transition: all 0.3s ease-out;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center.hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }

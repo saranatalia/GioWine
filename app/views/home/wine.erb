@@ -15,10 +15,10 @@
       <div class="col-md-5">
         <div class="container">
           <div class="row">
-          <br>
-<hr>
+            <br>
+            <hr>
             <h2>wine</h2>
-            
+
 
             <div class="row">
               <div class="col-md-12">
@@ -66,10 +66,10 @@
 
           <br>
           <div class="row">
-          <br>
-          <hr>
+            <br>
+            <hr>
             <h2>food</h2>
-            
+
             <p>We represent a small but rich collection of food products and non-alcoholic beverages including Italy's number one sparkling water, choice artisinal pasta of top international chefs, olive oil cultivated on the Sicilian seaside, and the original amaretti cookies since XXXX. Buon appetito!</p>
             <br>
             <div id="the_foods" class="row font">
@@ -78,7 +78,7 @@
               <p class="hvr-underline-from-center" data-name="olio" >Planeta Olive Oil</p>
               <br>
               <p class="hvr-underline-from-center" data-name="rustichella" >Rustichella Pasta Artigianale</p>
-             <br>
+              <br>
               <p class="hvr-underline-from-center" data-name="ferrarelle" >Ferrarelle Mineral Water</p>
             </div><!--/endrow-->
 
@@ -94,362 +94,362 @@
 
       <!--Modals-->
 
-    <% modals = [
+      <% modals = [
         { id:   'myModal',
           title:'PLANETA',
           body:[{
             html: %W(
-                      #{image_tag("winery/planeta.jpg", alt:"Planeta Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "A bottle of Planeta Chardonny ready for tasting | Region: Sicilia",
-            quote: "Planeta represents not just one, but six ways of developing the territory, in six different settings between Sambuca di Sicilia and Menfi: there are six Planeta wine producing estates, each one with a specific research and development project."
-          }],
-          logo:{
-            src: 'brands/planeta.png',
-            alt: 'Planeta logo'
-          },
-          link:'http://www.planeta.it/'
-        },
-        { id:   'myModal2',
-          title:'BATASIOLO',
-          body:[{
-            html: %W(
-                      #{image_tag("winery/harvest.jpg", alt:"Batasiolo Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "Harvest time at the Batasiolo vineyards | Region: Piemonte",
-            quote: "In the old local dialect the word 'beni' means a property or estate, and it is this idea of the unbreakable bond existing between the farmer and his vineyard which is encapsulated in the name 'Beni di Batasiolo.'"
-          }],
-          logo:{
-            src: 'brands/batasiolo.png',
-            alt: 'Batasiolo logo'
-          },
-          link:'http://www.batasiolo.com/'
-        },
-        { id:   'myModal3',
-          title:'MASCHIO',
-          body:[{
-            html: %W(
-                      <iframe width="100%" height="375" src="https://www.youtube.com/embed/vd-MMShhxRs" frameborder="0" allowfullscreen></iframe>
-                    ).join(' '),
-            caption: "Maschio's 2012 commercial for their Pinot Rosa wine, giving tasters a \"sparkling moment\" | Region: Veneto",
-            quote: "These are products that satisfy even the most demanding palates at the most particular moments. For over 40 years Maschio has been a synonym of quality and a guarantee of success."
-          }],
-          logo:{
-            src: 'brands/maschio.png',
-            alt: 'Cantine Maschio logo'
-          },
-          link:'http://www.cantinemaschio.it/en'
-        },
-        { id:   'myModal4',
-          title:'MAZZEI',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/mazzei.jpg", alt:"Mazzei Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "The Mazzei vineyards are visible from the village of Gelso | Region: Toscana",
-            quote: "Today, after almost <strong>six centuries</strong>, the Mazzei family still devotes itself to winemaking, with constant commitment, an eye towards innovation, and an abiding respect for the land."
-          }],
-          logo:{
-            src: 'brands/mazzei.png',
-            alt: 'Mazzei logo'
-          },
-          link:'http://www.mazzei.it/eng_intro/no_intro:1'
-        },
-        { id:   'myModal5',
-          title:'FARNESE',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/farnese.jpg", alt:"Farnese Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "The Farnese vineyard is located in the beautiful Cupa valley | Region: Abruzzo",
-            quote: "The wines from Abruzzo became famous worldwide in the 16th century, thanks to Princess Margaret of Austria and Prince Farnese, who began producing high quality wines which were enjoyed at feasts throughout Europe. The Farnese group carry on this reputation and tradition with advanced programs of production and marketing."
-          }],
-          logo:{
-            src: 'brands/farnese.png',
-            alt: 'Farnese logo'
-          },
-          link:'http://www.farnesevini.it'
-        },
-        { id:   'myModal6',
-          title:'FANTINEL',
-          body:[{
-            html: %W(
-                      <iframe width="100%" height="375" src="https://www.youtube.com/embed/9CgG8egegHA" frameborder="0" allowfullscreen></iframe>
-                    ).join(' '),
-            caption: "A video made by Fantinel winery: \"Feel the Emotion\" | Region: Friuli Venezia Giulia",
-            quote: "For over four decades, passion has been the driving force of Fantinel, a group of technicians and professionals who work every day with diligence and enthusiasm to create a range of wines able to offer strong emotions that are imprinted in memory."
-          }],
-          logo:{
-            src: 'brands/fantinel.png',
-            alt: 'Fantinel logo'
-          },
-          link:'http://www.fantinel.com/en/entry.aspx'
-        },
-        { id:   'myModal7',
-          title:'RIUNITE',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/riunite_3.png", alt:"Riunite Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "The celebrated Lambrusco grape variety | Region: Emilia Romagna",
-            quote: "Riunite is most closely identified with the Lambrusco grape, a variety native to central Italy. Lambrusco is said to be one of the oldest grapes in history, one that was first vinified by the Etruscans, dating back to before the first century BC. When you are drinking Riunite, you are drinking history."
-          }],
-          logo:{
-            src: 'brands/riunite.png',
-            alt: 'Cantine Riunite logo'
-          },
-          link:'http://www.riunite.com'
-        },
-        { id:   'myModal8',
-          title:'CASANOVA DI NERI',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/Cneri_087.jpg", alt:"Casanova di Neri Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "Harvested grapes ready for vinification | Region: Toscana",
-            quote: "High quality vines, and rigorous, careful work in the cellar have lead to the production of unique wines with great character and well defined styles. "
-          }],
-          logo:{
-            src: 'brands/casanova.png',
-            alt: 'Casanova di Neri logo'
-          },
-          link:'http://www.casanovadineri.it/en-index.html'
-        },
-        { id:   'myModal9',
-          title:'MASI',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/masi.jpg", alt:"Appassimento at Masi Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "The process of \"appassimento\" (to dry and shrivel) is used to make Masi's famed Amarone wine | Region: Veneto",
-            quote: "Masi is proud to be a worldwide ambassador of the Venetian culture and values expressed throughout the territory and in their wine."
-          }],
-          logo:{
-            src: 'brands/masi.png',
-            alt: 'Masi logo'
-          },
-          link:'http://www.masi.it/eng/home'
-        },
-        { id:   'myModal10',
-          title:'LAZZARONI',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/lazzaroni_2.jpg", alt:"Amaretto Lazzaroni", :class =>"full")}
-                    ).join(' '),
-            caption: "CAPTION| Region: Lombardia",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipisicing "
-          }],
-          logo:{
-            src: 'brands/lazzaroni.jpg',
-            alt: 'Lazzaroni logo'
-          },
-          link:'http://www.lazzaroni.it'
-        },
-        { id:   'myModal11',
-          title:'CASALE DEL GIGLIO',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/cantina.jpeg", alt:"Casale del Giglio Winery", :class =>"full")}
-                    ).join(' '),
-            caption: "The Casale Del Giglio cantina | Region: Lazio",
-            quote: "Unlike other regions of Italy, this territory was still uncharted in viticultural terms when Berardino Santarelli and his son Antonio launched their research project in 1985. To date, Casale del Giglio has converted its 180 hectares selecting those grape varieties which have proved to interact best with the territory and produce the best quality wines."
-          }],
-          logo:{
-            src: 'brands/casale.png',
-            alt: 'Casale Del Giglio Logo'
-          },
-          link:'http://www.casaledelgiglio.it/en'
-        },
-        { id:   'myModal12',
-          title:'CECCHI',
-          body:[{
-            html: %W(
-                    <iframe width="100%" height="375" src="https://www.youtube.com/embed/PzZllyFrxEg" frameborder="0" allowfullscreen></iframe>
-                    ).join(' '),
-            caption: "A video made by Cecchi winery. Discover \"the pure truth of wine\" | Region: Toscana",
-            quote: " Since 1893 the Cecchi family & brand has been synonymous with viticulture, both in Italy and throughout the world. The history of the winery is a compelling story of a family articulated by passion, dedication to the land, and brilliant entrepreneurial spirit. "
-          }],
-          logo:{
-            src: 'brands/cecchi.png',
-            alt: 'Cecchi logo'
-          },
-          link:'http://cecchi.net/?lang=en'
-        },
-        { id:   'myModal13',
-          title:'VESEVO',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/vesevo.jpg", alt:"Vesevo Vineyard", :class =>"full")}
-                    ).join(' '),
-            caption: "Vines from the Vesevo vineyard, named after the volcano Vesuvio | Region: Campania",
-            quote: "Vesevo's continued research and implementation of modern technologies is reflected in the quality of their wines, which are always obtained with the respect and the full expression of the territory from which they arise."
-          }],
-          logo:{
-            src: 'brands/vesevo.png',
-            alt: 'Vesevo logo'
-          },
-          link:'http://www.farnesevini.it/vesevo_azienda'
-        },
-        { id:   'myModal14',
-          title:'RUSTICHELLA',
-          body:[{
-            html: %W(
-                    <iframe width="100%" height="375" src="https://www.youtube.com/embed/fYmXH4mEk40" frameborder="0" allowfullscreen></iframe>
-                    ).join(' '),
-            caption: "A video made during Rustichella's 2014 Primograno tour. Chefs from around the world were invited and taught how to craft their renowned artisinal pasta | Region: Abruzzo",
-            quote: "Gianluigi and Stefania Peduzzi proudly continue their grandfather's Abruzzan tradition using only top quality durum wheat semolina, bronze dies, and pure mountain water to achieve that perfect texture and taste that made Rustichella d'Abruzzo the most recognized premium pasta, used by top chefs and available in all delicatessen shops of the world."
-          }],
-          logo:{
-            src: 'brands/rustichella.png',
-            alt: 'Rustichella logo'
-          },
-          link:'http://www.rustichella.it/index.php?lang=en'
-        },
-        { id:   'myModal15',
-          title:'FERRARELLE',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/ferrarelle.png", alt:"Ferrarelle Bottle Picture", :class =>"full")}
-                    ).join(' '),
-            caption: 'The best way to enjoy a glass of Ferrarelle is with real Italian pizza | Region:',
-            quote: "Ferrarelle is Italy's n°1 sparkling water bottled directly at the source since 1893. It springs from an ancient volcanic source, the extinct Roccamonfina volcano. Its natural effervescence, unique sensory profile, and elegant taste make Ferrarelle the perfect complement to the flavors of outstanding cuisine."
-          }],
-          logo:{
-            src: 'brands/ferrarelle.png',
-            alt: 'Ferrarelle logo'
-          },
-          link:'http://www.ferrarelle.it/en/home.html'
-        },
-        { id:   'myModal17',
-          title:'AMARETTI DEL CHIOSTRO',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/chiostro.jpg", alt:"Amaretti di Saronno", width:"90%")}
-                    ).join(' '),
-            caption: "CAPTION | Region: Lombardia",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipisicing "
-          }],
-          logo:{
-            src: 'brands/chiostro.png',
-            alt: 'Amaretti del Chiostro logo'
-          },
-          link:'http://www.chiostrodisaronno.it'
-        },
-        { id:   'myModal18',
-          title:'PLANETA OLIVE OIL',
-          body:[{
-            html: %W(
-                    #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
-                    ).join(' '),
-            caption: "Hand-picked olives at Planeta's Caparrina oil mill | Region: Sicilia",
-            quote: "The Planeta olive grove extends for 98 hectares in the Capparrina district, a natural oasis of great beauty sloping towards the sea. Planeta’s decision to dedicate this land to olives was not random: it was both an ethical and aesthetic choice in order to safeguard the landscape and its nature, to make the most of the land and to create employment."
-          }],
-          logo:{
-            src: 'brands/planeta.png',
-            alt: 'Planeta logo'
-          },
-          link:'http://www.planeta.it/en/olio'
-        },
-        { id:   'myModal16',
-          title:'LA RONCAIA',
-          body:[
-            {
-              html: %W(
-                      #{image_tag("winery/roncaia.jpg", alt:"La Roncaia Winery", :class => "full")}
-                      ).join(' '),
-              caption: "La Roncaia's facilities | Region: Friuli",
-              quote: "This is a place for contemplation and experience accumulated during the slow passage of the seasons, where each day-to-day act takes on the sacredness of a ritual. Close to the exclusive vineyards in Cergneu di Nimis stands La Roncaia cellar, where life proceeds in complete harmony with the surroundings."
-            },
-            {
-              html: 
+              #{image_tag("winery/planeta.jpg", alt:"Planeta Winery", :class =>"full")}
+              ).join(' '),
+caption: "A bottle of Planeta Chardonny ready for tasting | Region: Sicilia",
+quote: "Planeta represents not just one, but six ways of developing the territory, in six different settings between Sambuca di Sicilia and Menfi: there are six Planeta wine producing estates, each one with a specific research and development project."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.planeta.it/'
+},
+{ id:   'myModal2',
+  title:'BATASIOLO',
+  body:[{
+    html: %W(
+      #{image_tag("winery/harvest.jpg", alt:"Batasiolo Winery", :class =>"full")}
+      ).join(' '),
+caption: "Harvest time at the Batasiolo vineyards | Region: Piemonte",
+quote: "In the old local dialect the word 'beni' means a property or estate, and it is this idea of the unbreakable bond existing between the farmer and his vineyard which is encapsulated in the name 'Beni di Batasiolo.'"
+}],
+logo:{
+  src: 'brands/batasiolo.png',
+  alt: 'Batasiolo logo'
+},
+link:'http://www.batasiolo.com/'
+},
+{ id:   'myModal3',
+  title:'MASCHIO',
+  body:[{
+    html: %W(
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/vd-MMShhxRs" frameborder="0" allowfullscreen></iframe>
+      ).join(' '),
+caption: "Maschio's 2012 commercial for their Pinot Rosa wine, giving tasters a \"sparkling moment\" | Region: Veneto",
+quote: "These are products that satisfy even the most demanding palates at the most particular moments. For over 40 years Maschio has been a synonym of quality and a guarantee of success."
+}],
+logo:{
+  src: 'brands/maschio.png',
+  alt: 'Cantine Maschio logo'
+},
+link:'http://www.cantinemaschio.it/en'
+},
+{ id:   'myModal4',
+  title:'MAZZEI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/mazzei.jpg", alt:"Mazzei Winery", :class =>"full")}
+      ).join(' '),
+caption: "The Mazzei vineyards are visible from the village of Gelso | Region: Toscana",
+quote: "Today, after almost <strong>six centuries</strong>, the Mazzei family still devotes itself to winemaking, with constant commitment, an eye towards innovation, and an abiding respect for the land."
+}],
+logo:{
+  src: 'brands/mazzei.png',
+  alt: 'Mazzei logo'
+},
+link:'http://www.mazzei.it/eng_intro/no_intro:1'
+},
+{ id:   'myModal5',
+  title:'FARNESE',
+  body:[{
+    html: %W(
+      #{image_tag("winery/farnese.jpg", alt:"Farnese Winery", :class =>"full")}
+      ).join(' '),
+caption: "The Farnese vineyard is located in the beautiful Cupa valley | Region: Abruzzo",
+quote: "The wines from Abruzzo became famous worldwide in the 16th century, thanks to Princess Margaret of Austria and Prince Farnese, who began producing high quality wines which were enjoyed at feasts throughout Europe. The Farnese group carry on this reputation and tradition with advanced programs of production and marketing."
+}],
+logo:{
+  src: 'brands/farnese.png',
+  alt: 'Farnese logo'
+},
+link:'http://www.farnesevini.it'
+},
+{ id:   'myModal6',
+  title:'FANTINEL',
+  body:[{
+    html: %W(
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/9CgG8egegHA" frameborder="0" allowfullscreen></iframe>
+      ).join(' '),
+caption: "A video made by Fantinel winery: \"Feel the Emotion\" | Region: Friuli Venezia Giulia",
+quote: "For over four decades, passion has been the driving force of Fantinel, a group of technicians and professionals who work every day with diligence and enthusiasm to create a range of wines able to offer strong emotions that are imprinted in memory."
+}],
+logo:{
+  src: 'brands/fantinel.png',
+  alt: 'Fantinel logo'
+},
+link:'http://www.fantinel.com/en/entry.aspx'
+},
+{ id:   'myModal7',
+  title:'RIUNITE',
+  body:[{
+    html: %W(
+      #{image_tag("winery/riunite_3.png", alt:"Riunite Winery", :class =>"full")}
+      ).join(' '),
+caption: "The celebrated Lambrusco grape variety | Region: Emilia Romagna",
+quote: "Riunite is most closely identified with the Lambrusco grape, a variety native to central Italy. Lambrusco is said to be one of the oldest grapes in history, one that was first vinified by the Etruscans, dating back to before the first century BC. When you are drinking Riunite, you are drinking history."
+}],
+logo:{
+  src: 'brands/riunite.png',
+  alt: 'Cantine Riunite logo'
+},
+link:'http://www.riunite.com'
+},
+{ id:   'myModal8',
+  title:'CASANOVA DI NERI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/Cneri_087.jpg", alt:"Casanova di Neri Winery", :class =>"full")}
+      ).join(' '),
+caption: "Harvested grapes ready for vinification | Region: Toscana",
+quote: "High quality vines, and rigorous, careful work in the cellar have lead to the production of unique wines with great character and well defined styles. "
+}],
+logo:{
+  src: 'brands/casanova.png',
+  alt: 'Casanova di Neri logo'
+},
+link:'http://www.casanovadineri.it/en-index.html'
+},
+{ id:   'myModal9',
+  title:'MASI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/masi.jpg", alt:"Appassimento at Masi Winery", :class =>"full")}
+      ).join(' '),
+caption: "The process of \"appassimento\" (to dry and shrivel) is used to make Masi's famed Amarone wine | Region: Veneto",
+quote: "Masi is proud to be a worldwide ambassador of the Venetian culture and values expressed throughout the territory and in their wine."
+}],
+logo:{
+  src: 'brands/masi.png',
+  alt: 'Masi logo'
+},
+link:'http://www.masi.it/eng/home'
+},
+{ id:   'myModal10',
+  title:'LAZZARONI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/lazzaroni_2.jpg", alt:"Amaretto Lazzaroni", :class =>"full")}
+      ).join(' '),
+caption: "CAPTION| Region: Lombardia",
+quote: "Lorem ipsum dolor sit amet, consectetur adipisicing "
+}],
+logo:{
+  src: 'brands/lazzaroni.jpg',
+  alt: 'Lazzaroni logo'
+},
+link:'http://www.lazzaroni.it'
+},
+{ id:   'myModal11',
+  title:'CASALE DEL GIGLIO',
+  body:[{
+    html: %W(
+      #{image_tag("winery/cantina.jpeg", alt:"Casale del Giglio Winery", :class =>"full")}
+      ).join(' '),
+caption: "The Casale Del Giglio cantina | Region: Lazio",
+quote: "Unlike other regions of Italy, this territory was still uncharted in viticultural terms when Berardino Santarelli and his son Antonio launched their research project in 1985. To date, Casale del Giglio has converted its 180 hectares selecting those grape varieties which have proved to interact best with the territory and produce the best quality wines."
+}],
+logo:{
+  src: 'brands/casale.png',
+  alt: 'Casale Del Giglio Logo'
+},
+link:'http://www.casaledelgiglio.it/en'
+},
+{ id:   'myModal12',
+  title:'CECCHI',
+  body:[{
+    html: %W(
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/PzZllyFrxEg" frameborder="0" allowfullscreen></iframe>
+      ).join(' '),
+caption: "A video made by Cecchi winery. Discover \"the pure truth of wine\" | Region: Toscana",
+quote: " Since 1893 the Cecchi family & brand has been synonymous with viticulture, both in Italy and throughout the world. The history of the winery is a compelling story of a family articulated by passion, dedication to the land, and brilliant entrepreneurial spirit. "
+}],
+logo:{
+  src: 'brands/cecchi.png',
+  alt: 'Cecchi logo'
+},
+link:'http://cecchi.net/?lang=en'
+},
+{ id:   'myModal13',
+  title:'VESEVO',
+  body:[{
+    html: %W(
+      #{image_tag("winery/vesevo.jpg", alt:"Vesevo Vineyard", :class =>"full")}
+      ).join(' '),
+caption: "Vines from the Vesevo vineyard, named after the volcano Vesuvio | Region: Campania",
+quote: "Vesevo's continued research and implementation of modern technologies is reflected in the quality of their wines, which are always obtained with the respect and the full expression of the territory from which they arise."
+}],
+logo:{
+  src: 'brands/vesevo.png',
+  alt: 'Vesevo logo'
+},
+link:'http://www.farnesevini.it/vesevo_azienda'
+},
+{ id:   'myModal14',
+  title:'RUSTICHELLA',
+  body:[{
+    html: %W(
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/fYmXH4mEk40" frameborder="0" allowfullscreen></iframe>
+      ).join(' '),
+caption: "A video made during Rustichella's 2014 Primograno tour. Chefs from around the world were invited and taught how to craft their renowned artisinal pasta | Region: Abruzzo",
+quote: "Gianluigi and Stefania Peduzzi proudly continue their grandfather's Abruzzan tradition using only top quality durum wheat semolina, bronze dies, and pure mountain water to achieve that perfect texture and taste that made Rustichella d'Abruzzo the most recognized premium pasta, used by top chefs and available in all delicatessen shops of the world."
+}],
+logo:{
+  src: 'brands/rustichella.png',
+  alt: 'Rustichella logo'
+},
+link:'http://www.rustichella.it/index.php?lang=en'
+},
+{ id:   'myModal15',
+  title:'FERRARELLE',
+  body:[{
+    html: %W(
+      #{image_tag("winery/ferrarelle.png", alt:"Ferrarelle Bottle Picture", :class =>"full")}
+      ).join(' '),
+caption: 'The best way to enjoy a glass of Ferrarelle is with real Italian pizza | Region:',
+quote: "Ferrarelle is Italy's n°1 sparkling water bottled directly at the source since 1893. It springs from an ancient volcanic source, the extinct Roccamonfina volcano. Its natural effervescence, unique sensory profile, and elegant taste make Ferrarelle the perfect complement to the flavors of outstanding cuisine."
+}],
+logo:{
+  src: 'brands/ferrarelle.png',
+  alt: 'Ferrarelle logo'
+},
+link:'http://www.ferrarelle.it/en/home.html'
+},
+{ id:   'myModal17',
+  title:'AMARETTI DEL CHIOSTRO',
+  body:[{
+    html: %W(
+      #{image_tag("winery/chiostro.jpg", alt:"Amaretti di Saronno", width:"90%")}
+      ).join(' '),
+caption: "CAPTION | Region: Lombardia",
+quote: "Lorem ipsum dolor sit amet, consectetur adipisicing "
+}],
+logo:{
+  src: 'brands/chiostro.png',
+  alt: 'Amaretti del Chiostro logo'
+},
+link:'http://www.chiostrodisaronno.it'
+},
+{ id:   'myModal18',
+  title:'PLANETA OLIVE OIL',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: "Hand-picked olives at Planeta's Caparrina oil mill | Region: Sicilia",
+quote: "The Planeta olive grove extends for 98 hectares in the Capparrina district, a natural oasis of great beauty sloping towards the sea. Planeta’s decision to dedicate this land to olives was not random: it was both an ethical and aesthetic choice in order to safeguard the landscape and its nature, to make the most of the land and to create employment."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.planeta.it/en/olio'
+},
+{ id:   'myModal16',
+  title:'LA RONCAIA',
+  body:[
+    {
+      html: %W(
+        #{image_tag("winery/roncaia.jpg", alt:"La Roncaia Winery", :class => "full")}
+        ).join(' '),
+caption: "La Roncaia's facilities | Region: Friuli",
+quote: "This is a place for contemplation and experience accumulated during the slow passage of the seasons, where each day-to-day act takes on the sacredness of a ritual. Close to the exclusive vineyards in Cergneu di Nimis stands La Roncaia cellar, where life proceeds in complete harmony with the surroundings."
+},
+{
+  html:
 
-              %W(    <h4> Featured Product: Friulano</h4>
-                #{image_tag("featured/roncaia.jpg", alt:"La Roncaia Friulano Wine", :class => "featured")}
-                      <p>Composition:</p>
-                      <p>Awards:</p>
-                      ).join(' '),
-              caption: "222222222222222222222",
-              quote: "3333333333333333333333"
-            },
-          ],
-          logo:{
-            src: 'brands/laroncaia.png',
-            alt: 'La Roncaia logo'
-          },
-          link:'http://laroncaia.it'
-        },
-      ] %>
+  %W(    <h4> Featured Product: Friulano</h4>
+    #{image_tag("featured/roncaia.jpg", alt:"La Roncaia Friulano Wine", :class => "featured")}
+    <p>Composition:</p>
+    <p>Awards:</p>
+    ).join(' '),
+caption: "222222222222222222222",
+quote: "3333333333333333333333"
+},
+],
+logo:{
+  src: 'brands/laroncaia.png',
+  alt: 'La Roncaia logo'
+},
+link:'http://laroncaia.it'
+},
+] %>
 
-    <% modals.each do |modal| %>
-      <div class="modal fade" id="<%= modal[:id] %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h4 class="modal-title" id="myModalLabel"><%= modal[:title] %></h4>
-            </div>
-            <div class="modal-body">
-
-              <div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <% modal[:body].each_with_index do |item, index| %>
-                    <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<%= 'active' if (index == 0) %>"></li>
-                  <% end %>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <% modal[:body].each_with_index do |item, index| %>
-                    <div class="item <%= 'active' if (index == 0) %>">
-                      <div class="">
-                        <%= item[:html].html_safe %>
-                        <p class="caption">
-                          <%= item[:caption] %>
-                        </p>
-                        <blockquote>
-                          <p>
-                            <%= item[:quote] %>
-                          </p>
-                        </blockquote>
-                      </div>
-                    </div>
-                  <% end %>
-                </div>
-                <!-- Controls -->
-                <% if modal[:body].length > 1 %>
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
-                <% end %>
-              </div>
-
-
-
-            </div>
-            <div class="modal-footer">
-              <%= image_tag modal[:logo][:src], alt: modal[:logo][:alt] %>
-              <a href="<%= modal[:link] %>" target="_blank">
-                <button type="button" class="btn btn-default">
-                  View Website
-                </button>
-              </a>
-              <button type="button" class="btn btn-default" data-dismiss="modal">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
+<% modals.each do |modal| %>
+<div class="modal fade" id="<%= modal[:id] %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><%= modal[:title] %></h4>
       </div>
-    <% end %>
+      <div class="modal-body">
+
+        <div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% modal[:body].each_with_index do |item, index| %>
+            <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<%= 'active' if (index == 0) %>"></li>
+            <% end %>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% modal[:body].each_with_index do |item, index| %>
+            <div class="item <%= 'active' if (index == 0) %>">
+              <div class="">
+                <%= item[:html].html_safe %>
+                <p class="caption">
+                  <%= item[:caption] %>
+                </p>
+                <blockquote>
+                  <p>
+                    <%= item[:quote] %>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <% end %>
+          </div>
+          <!-- Controls -->
+          <% if modal[:body].length > 1 %>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+          <% end %>
+        </div>
 
 
-    </div><!-- /row -->
-  </div><!--/end blurb-->
+
+      </div>
+      <div class="modal-footer">
+        <%= image_tag modal[:logo][:src], alt: modal[:logo][:alt] %>
+        <a href="<%= modal[:link] %>" target="_blank">
+          <button type="button" class="btn btn-default">
+            View Website
+          </button>
+        </a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+</div><!-- /row -->
+</div><!--/end blurb-->
 </div><!-- /Jumbotron -->
 
 <%= stylesheet_link_tag '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css',

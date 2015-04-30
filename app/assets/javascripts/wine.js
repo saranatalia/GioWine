@@ -41,10 +41,10 @@ var markers_data = {
   cecchi:       {name: 'cecchi',      coord:[43.863751,10.248668],    modal:'#myModal12', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   vesevo:       {name: 'vesevo',      coord:[40.861278,14.737792],    modal:'#myModal13', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   roncaia:      {name: 'roncaia',     coord:[46.210658,13.303138],    modal:'#myModal16', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
-  rustichella:  {name: 'rustichella', coord:[42.396833,13.56532],     modal:'#myModal14', icon:{type:'glyphicon glyphicon-cutlery', color:'green'},      marker:null},
-  ferrarelle:   {name: 'ferrarelle',  coord:[41.26142,14.1498185],    modal:'#myModal15', icon:{type:'glyphicon glyphicon-cutlery', color:'green'},      marker:null},
-  amaretti:     {name: 'amaretti',    coord:[45.6867005,8.9315245],   modal:'#myModal17', icon:{type:'glyphicon glyphicon-cutlery', color:'green'},      marker:null},
-  olio:         {name: 'olio',        coord:[37.6042748,12.9660447],  modal:'#myModal18', icon:{type:'glyphicon glyphicon-cutlery', color:'green'},      marker:null}
+  rustichella:  {name: 'rustichella', coord:[42.396833,13.56532],     modal:'#myModal14', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
+  ferrarelle:   {name: 'ferrarelle',  coord:[41.26142,14.1498185],    modal:'#myModal15', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
+  amaretti:     {name: 'amaretti',    coord:[45.6867005,8.9315245],   modal:'#myModal17', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
+  olio:         {name: 'olio',        coord:[37.6042748,12.9660447],  modal:'#myModal18', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null}
 };
 
 _.map(markers_data, function(data, key){
@@ -56,7 +56,10 @@ _.map(markers_data, function(data, key){
   });
   var marker = L.marker(data.coord, {icon: icon}).addTo(map);
   marker.on('mouseover', function() {
-    console.log(data.name);
+    $('.jumbotron p[data-name='+data.name+']').addClass('hover');
+  })
+  marker.on('mouseout', function() {
+    $('.jumbotron p[data-name='+data.name+']').removeClass('hover');
   })
   marker.on('click', function() {
     console.log(data.modal);
