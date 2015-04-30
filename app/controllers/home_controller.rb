@@ -31,5 +31,8 @@ class HomeController < ActionController::Base
     @title = "Giowine > Calendar"
   end
 
+  def winefrance
+    @title = "Giowine > French Wine"
+  end
 
 end

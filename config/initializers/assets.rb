@@ -30,6 +30,7 @@ Rails.application.config.assets.precompile += %w(
                                                   news.js
                                                   press.js
                                                   wine.js
+                                                  winefrance.js
 
                                                 )
 
