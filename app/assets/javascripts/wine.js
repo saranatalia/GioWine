@@ -55,9 +55,15 @@ _.map(markers_data, function(data, key){
     extraClasses: data.name + ' ' + data.extraClasses
   });
   var marker = L.marker(data.coord, {icon: icon}).addTo(map);
+  var bouncing = false;
   marker.on('mouseover', function() {
     $('.jumbotron p[data-name='+data.name+']').addClass('hover');
-    this.bounce(1);
+    if (bouncing == false)
+    {
+      bouncing = true;
+      this.bounce(1);
+      setTimeout(function() { bouncing = false; }, 1000); // bouncing=false after 1000ms/1s
+    }
   })
   marker.on('mouseout', function() {
     $('.jumbotron p[data-name='+data.name+']').removeClass('hover');
