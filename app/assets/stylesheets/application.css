@@ -25,6 +25,10 @@
 
 }
 
+#header nav {
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 
 .fixed {
@@ -108,7 +112,7 @@ article {
 .element {
   min-height: 20px;
   background-color: white;
-  width: 220px;
+ 
   text-align: center;
 }
 
