@@ -335,6 +335,11 @@ ul.nav a:focus {
   width: 580px;
 }
 
+#map3 {
+  height: 635px;
+  width: 580px;
+}
+
 #nospace {
   margin-top: -30px;
   margin-bottom: -15px;
@@ -364,7 +369,7 @@ ul.nav a:focus {
 }
 
 #black:hover {
-  color: black;
+
   cursor: pointer;
   text-decoration: none;
 }
@@ -493,6 +498,7 @@ transition: all 0.3s ease-out;
 
 .modal {
   color: rgba(141,32,54, 0.9);
+  z-index: 9999999;
 }
 
 .modal-body p {
@@ -666,7 +672,8 @@ transition: all 0.3s ease-out;
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #2098d1;
+  background: gray; 
+  // <--here ^^-->
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

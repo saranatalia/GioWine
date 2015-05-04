@@ -174,7 +174,32 @@ media: 'all' %>
               var marker = L.marker([32.8245525,-117.0951632]);
               marker.addTo(map);
               marker.bindPopup("Main Office <br> San Diego, California USA").openPopup();
+   
+//  var bouncing = false;
+//   marker.on('mouseover', function() {
+//    marker.addClass('hover');
+//     if (bouncing == false)
+//     {
+//       bouncing = true;
+//       this.bounce(1);
+//       setTimeout(function() { bouncing = false; }, 1000); // bouncing=false after 1000ms/1s
+//     }
+//   })
+//   marker.on('mouseout', function() {
+//     marker.removeClass('hover');
+//   })
 
+// });
+
+// /* Define options of bouncing for all markers */
+// L.Marker.setBouncingOptions({
+//         bounceHeight  : 20,   // height of the bouncing
+//         bounceSpeed   : 34,   // bouncing speed coefficient
+//         exclusive     : true, // if this marker bouncing all others must stop
+//         elastic       : true, // activate contract animation when marker touch the ground
+//         contractSpeed : 34,   // contracting speed coefficient, default: 52
+//         contractHeight: 12,   // how much marker will contract when it touch the ground (px), default: 12
+// });
             </script>
           </div><!-- /MAP-->
 
@@ -243,12 +268,14 @@ media: 'all' %>
         {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
         {name:'Mazzei', img:'brands/mazzei.png', url:'http://www.mazzei.it/'},
         {name:'Planeta', img:'brands/planeta.png', url:'http://www.planeta.it/'},
-        {name:'Riunite', img:'brands/riunite.png', url:'#'},
+        {name:'Riunite', img:'brands/riunite.png', url:'http://www.riunite.com/'},
         {name:'Vesevo', img:'brands/vesevo.png', url:'http://www.farnesevini.it/vesevo_azienda'},
         {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
         {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
+        {name:'Chiostro', img:'brands/chiostro.png', url:'#'},
         {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
-        {name:'Rustichella', img:'brands/rustichella.png', url:'#'},    
+        {name:'Rustichella', img:'brands/rustichella.png', url:'http://rustichella.it/index.php?lang=it'}, 
+
         
         ] %>
         <% brands.each do |brand| %>
@@ -264,4 +291,4 @@ media: 'all' %>
 </div><!-- /.jumbotron -->
 
 <%= stylesheet_link_tag 'index',    media: 'all' %>
-<%= javascript_include_tag 'index', media: 'all' %>
+<%= javascript_include_tag '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js', 'leaflet.smoothmarkerbouncing', 'index', media: 'all' %>

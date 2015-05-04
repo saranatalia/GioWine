@@ -11,83 +11,179 @@
 
 <div class="jumbotron">
   <div class="blurb">
-    <div class="row">
-      <div class="col-md-5">
-        <div class="container">
-          <div class="row">
-          <br>
-<hr>
-            <h2>wine</h2>
-            
+      <div class="container">
+          <div class="col-md-5">
+                        <br>
+              <h2>wine</h2>
+              <p>Giowine represents a varied portfolio of nationally renowned quality Italian wines from all over the country. Each region of Italy embodies a unique character due to the diverse micro climates, the particularly adapted grape varieties, and the traditional regional styles of wine-making. You can learn more by exploring our map and clicking on the icons.  Brand information comes straight from the producer, for a closer look we invite you to check out their websites!</p>
+          </div>
+          <div class="col-md-7">
+            <div id="map3"></div><!-- /MAP-->
+          </div>
 
-            <div class="row">
-              <div class="col-md-12">
-                <p>
-                  Giowine represents a varied portfolio of nationally renowned quality Italian wines from all over the country. Each region of Italy embodies a unique character due to the diverse micro climates, the particularly adapted grape varieties, and the traditional regional styles of wine-making. You can learn more by exploring our map and clicking on the icons.  Brand information comes straight from the producer, for a closer look we invite you to check out their websites!
+
+  <!--Modals-->
+
+      <% modals = [
+        { id:   'bordeaux',
+          title:'BORDEAUX',
+          body:[{
+            html: %W(
+              #{image_tag("winery/planeta.jpg", alt:"Planeta Winery", :class =>"full")}
+              ).join(' '),
+caption: "A bottle of Planeta Chardonny ready for tasting | Region: Sicilia",
+quote: "Planeta represents not just one, but six ways of developing the territory, in six different settings between Sambuca di Sicilia and Menfi: there are six Planeta wine producing estates, each one with a specific research and development project."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.planeta.it/'
+},
+{ id:   'cahors',
+  title:'CAHORS',
+  body:[{
+    html: %W(
+      #{image_tag("winery/harvest.jpg", alt:"Batasiolo Winery", :class =>"full")}
+      ).join(' '),
+caption: "Harvest time at the Batasiolo vineyards | Region: Piemonte",
+quote: "In the old local dialect the word 'beni' means a property or estate, and it is this idea of the unbreakable bond existing between the farmer and his vineyard which is encapsulated in the name 'Beni di Batasiolo.'"
+}],
+logo:{
+  src: 'brands/batasiolo.png',
+  alt: 'Batasiolo logo'
+},
+link:'http://www.batasiolo.com/'
+},
+{ id:   'champagne',
+  title:'CHAMPAGNE',
+  body:[{
+    html: %W(
+      <iframe width="100%" height="375" src="https://www.youtube.com/embed/vd-MMShhxRs" frameborder="0" allowfullscreen></iframe>
+      ).join(' '),
+caption: "Maschio's 2012 commercial for their Pinot Rosa wine, giving tasters a \"sparkling moment\" | Region: Veneto",
+quote: "These are products that satisfy even the most demanding palates at the most particular moments. For over 40 years Maschio has been a synonym of quality and a guarantee of success."
+}],
+logo:{
+  src: 'brands/maschio.png',
+  alt: 'Cantine Maschio logo'
+},
+link:'http://www.cantinemaschio.it/en'
+},
+{ id:   'burgundy',
+  title:'BURGUNDY',
+  body:[{
+    html: %W(
+      #{image_tag("winery/mazzei.jpg", alt:"Mazzei Winery", :class =>"full")}
+      ).join(' '),
+caption: "The Mazzei vineyards are visible from the village of Gelso | Region: Toscana",
+quote: "Today, after almost <strong>six centuries</strong>, the Mazzei family still devotes itself to winemaking, with constant commitment, an eye towards innovation, and an abiding respect for the land."
+}],
+logo:{
+  src: 'brands/mazzei.png',
+  alt: 'Mazzei logo'
+},
+link:'http://www.mazzei.it/eng_intro/no_intro:1'
+},
+{ id:   'rhone',
+  title:'RHONE VALLEY',
+  body:[{
+    html: %W(
+      #{image_tag("winery/farnese.jpg", alt:"Farnese Winery", :class =>"full")}
+      ).join(' '),
+caption: "The Farnese vineyard is located in the beautiful Cupa valley | Region: Abruzzo",
+quote: "The wines from Abruzzo became famous worldwide in the 16th century, thanks to Princess Margaret of Austria and Prince Farnese, who began producing high quality wines which were enjoyed at feasts throughout Europe. The Farnese group carry on this reputation and tradition with advanced programs of production and marketing."
+}],
+logo:{
+  src: 'brands/farnese.png',
+  alt: 'Farnese logo'
+},
+link:'http://www.farnesevini.it'
+},
+
+] %>
+
+<% modals.each do |modal| %>
+<div class="modal fade" id="<%= modal[:id] %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><%= modal[:title] %></h4>
+      </div>
+      <div class="modal-body">
+
+        <div id="myCarousel" class="carousel slide carousel-fit" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% modal[:body].each_with_index do |item, index| %>
+            <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<%= 'active' if (index == 0) %>"></li>
+            <% end %>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% modal[:body].each_with_index do |item, index| %>
+            <div class="item <%= 'active' if (index == 0) %>">
+              <div class="">
+                <%= item[:html].html_safe %>
+                <p class="caption">
+                  <%= item[:caption] %>
                 </p>
+                <blockquote>
+                  <p>
+                    <%= item[:quote] %>
+                  </p>
+                </blockquote>
               </div>
             </div>
-            <br>
-            <div id="the_wines" class="row font">
-              <div class="col-md-5">
-                <p class="bold hvr-underline-from-center" data-name="planeta" >Planeta</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="batasiolo" >Batasiolo</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="mazzei" >Mazzei</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="lazzaroni" >Lazzaroni</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="riunite" >Riunite</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="fantinel" >Fantinel</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="vesevo" >Vesevo</p>
-              </div>
-              <div class="col-md-7">
-                <p class="bold hvr-underline-from-center" data-name="maschio" >Maschio</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="masi" >Masi</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="farnese" >Farnese</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="cecchi" >Cecchi</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="casanova" >Casanova di Neri</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="casale" >Casale del Giglio</p>
-                <br>
-                <p class="bold hvr-underline-from-center" data-name="roncaia" >La Roncaia</p>
-              </div>
-            </div><!--/endrow-->
-
-
+            <% end %>
           </div>
-
-          <br>
-          <div class="row">
-          <br>
-          <hr>
-            <h2>food</h2>
-            
-            <p>We represent a small but rich collection of food products and non-alcoholic beverages including Italy's number one sparkling water, choice artisinal pasta of top international chefs, olive oil cultivated on the Sicilian seaside, and the original amaretti cookies since XXXX. Buon appetito!</p>
-            <br>
-            <div id="the_foods" class="row font">
-              <p class="hvr-underline-from-center" data-name="amaretti" >Amaretti del Chiostro</p>
-              <br>
-              <p class="hvr-underline-from-center" data-name="olio" >Planeta Olive Oil</p>
-              <br>
-              <p class="hvr-underline-from-center" data-name="rustichella" >Rustichella Pasta Artigianale</p>
-             <br>
-              <p class="hvr-underline-from-center" data-name="ferrarelle" >Ferrarelle Mineral Water</p>
-            </div><!--/endrow-->
-
-          </div>
-
-
+          <!-- Controls -->
+          <% if modal[:body].length > 1 %>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+          <% end %>
         </div>
+
+
+
       </div>
+      <div class="modal-footer">
+        <%= image_tag modal[:logo][:src], alt: modal[:logo][:alt] %>
+        <a href="<%= modal[:link] %>" target="_blank">
+          <button type="button" class="btn btn-default">
+            View Website
+          </button>
+        </a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+
+
+      </div><!-- /container-->
+  </div><!-- /blurb-->
+</div><!-- /jumbotron-->
+
+           
     
+
+
+
+
+
 
 <%= stylesheet_link_tag '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css',
 'leaflet.awesome-markers',
@@ -96,6 +192,7 @@
 media: 'all' %>
 <%= javascript_include_tag  '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js',
 'leaflet.awesome-markers',
+'leaflet.smoothmarkerbouncing',
 'underscore-min',
 'bootstrap-modal-carousel',
 'winefrance',

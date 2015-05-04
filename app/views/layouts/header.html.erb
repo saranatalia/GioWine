@@ -9,6 +9,9 @@
   <nav>
     <div class="flexrow center">
       <div class="element">
+          <%= link_to 'Home', root_path, :class => "hvr-underline-from-center #{'active' if request.fullpath == root_path }" %>
+        </div>
+      <div class="element">
        <%= link_to 'Products', wine_path, :class => "hvr-underline-from-center #{'active' if request.fullpath == wine_path }" %>
       </div>
       <div class="element">
