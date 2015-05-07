@@ -326,7 +326,7 @@ ul.nav a:focus {
 #map {
   height: 430px;
   width: 100%;
-  margin-bottom: 15px;
+
   color: rgba(141,32,54, 0.9);
 }
 
@@ -376,6 +376,11 @@ ul.nav a:focus {
 
 #territory {
   font-family: 'Cinzel';
+}
+
+#spacing {
+   letter-spacing: 2px;
+   text-align: center;
 }
 
 /*-----------------------------------------------------------------------------
