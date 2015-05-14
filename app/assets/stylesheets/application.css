@@ -19,7 +19,7 @@
 #header {
   background-color: white;
   width: 100%;
-  z-index: 9999999;
+  z-index: 1001;
   margin-bottom: 10px;
   border-bottom: 1px solid black;
 

@@ -6,210 +6,60 @@ media: 'all' %>
 media: 'all' %>
 
 
-<!-- <!-- 
-
-<!--NAVBAR EXPERIMENT-->
-<!-- <br>
-<br>
-<br>
-
-<header>
-<div class="new-nav">
-<div class="nav-logo">
-
-      <a href="index.html"><%= image_tag("vrais_logo.png") %></a>
-  </div>
-
-
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="400" role="navigation">
-
-
-
-  <div class="container-fluid"> -->
-    <!-- Brand and toggle get grouped for better mobile display-->
-
-<!--     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-       
-            
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("test/valley.jpg") %>
+      <div class="carousel-caption">
+        these will be replaced with our own images
+      </div>
     </div>
- -->
-<!--     Collect the nav links, forms, and other content for toggling -->
-   <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     
-      
-      <ul class="nav navbar-nav">
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Español</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">News&Events <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">something</a></li>
-            <li><a href="#">sdaf</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div> --><!-- /.navbar-collapse-->
-  <!-- </div>/.container-fluid
-</nav>
-
+    <div class="item">
+      <%= image_tag("test/field.jpg") %>
+      <div class="carousel-caption">
+        caption
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("test/grape2.jpg") %>
+      <div class="carousel-caption">
+       caption
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
-</header>  -->
-<!--END NAVBAR EXPERIMENT--> 
-
-
-
 
 
 <div class="jumbotron">
-<!--   <div class="container center">
-    <h2>GioWine</h2>
-    <h4 class="bold">The Italian link to the Americas</h4>
-  </div> -->
-  
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <%= image_tag("test/valley.jpg") %>
-        <div class="carousel-caption">
-          these will be replaced with our own images
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("test/field.jpg") %>
-        <div class="carousel-caption">
-          caption
-        </div>
-      </div>
-      <div class="item">
-        <%= image_tag("test/grape2.jpg") %>
-        <div class="carousel-caption">
-         caption
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
-  <br>
   <div class="blurb">
     <div class="row">
       <div class="col-md-6">
-        <div class="container">
-          <h2>where</h2>
-          <hr>
-          <!-- MAP-->
-          <div id="map">
-            <script>
-              var map = L.map('map', {
-                center: [-3.146934, -78.103972],
-                zoom: 0,
-                minZoom: 2,
-                maxZoom: 0,
-                scrollWheelZoom: false,
-                doubleClickZoom: false,
-                dragging: false,
-                touchZoom: false,
-                zoomControl: false
-              });
-
-
-              var Thunderforest_Outdoors = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
-              {
-                attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                minZoom: 1,
-                maxZoom: 16
-              }).addTo(map);
-
-
-              var marker = L.marker([-32.9264482,-68.813779]);
-              marker.addTo(map);
-              marker.bindPopup("Mendoza, Argentina").openPopup();
-
-              var marker = L.marker([-8.7565456,-63.8549068]);
-              marker.addTo(map);
-              marker.bindPopup("Porto Velho, Brasil").openPopup();
-
-              var marker = L.marker([14.62622,-90.4925605]);
-              marker.addTo(map);
-              marker.bindPopup("Mixco, Guatemala").openPopup();
-
-              var marker = L.marker([25.782324,-80.2310801]);
-              marker.addTo(map);
-              marker.bindPopup("Miami, Florida USA").openPopup();
-
-              var marker = L.marker([19.2902231,-81.369597]);
-              marker.addTo(map);
-              marker.bindPopup("George Town, Cayman Islands").openPopup();
-
-              var marker = L.marker([32.8245525,-117.0951632]);
-              marker.addTo(map);
-              marker.bindPopup("Main Office <br> San Diego, California USA").openPopup();
-   
-//  var bouncing = false;
-//   marker.on('mouseover', function() {
-//    marker.addClass('hover');
-//     if (bouncing == false)
-//     {
-//       bouncing = true;
-//       this.bounce(1);
-//       setTimeout(function() { bouncing = false; }, 1000); // bouncing=false after 1000ms/1s
-//     }
-//   })
-//   marker.on('mouseout', function() {
-//     marker.removeClass('hover');
-//   })
-
-// });
-
-// /* Define options of bouncing for all markers */
-// L.Marker.setBouncingOptions({
-//         bounceHeight  : 20,   // height of the bouncing
-//         bounceSpeed   : 34,   // bouncing speed coefficient
-//         exclusive     : true, // if this marker bouncing all others must stop
-//         elastic       : true, // activate contract animation when marker touch the ground
-//         contractSpeed : 34,   // contracting speed coefficient, default: 52
-//         contractHeight: 12,   // how much marker will contract when it touch the ground (px), default: 12
-// });
-            </script>
-          </div><!-- /MAP-->
-          <caption> <div id= "spacing"> <i>A map of our six offices throughout the American continents.
-          </i></div></caption>
-
-        </div>
-      </div><!--/column-->
-
+        <h2>where</h2>
+        <hr>
+        <div id="map"></div>
+        <caption>
+          <div id= "spacing">
+            <i>A map of our six offices throughout the American continents.</i>
+          </div>
+        </caption>
+      </div><!-- .col-md-6 -->
       <div class="col-md-6">
-        <div class="container">
           <h2>about</h2>
           <hr>
           <div class="content">
@@ -218,83 +68,82 @@ media: 'all' %>
             </p>
             <br>
             <p>
-              We cultivate continuing contact between suppliers and clients to foster reliable and dynamic relationships. We work with genuine enthusiasm to develop brands and product sales internationally at a highly personal and technical level from the producer to the final consumer. 
+              We cultivate continuing contact between suppliers and clients to foster reliable and dynamic relationships. We work with genuine enthusiasm to develop brands and product sales internationally at a highly personal and technical level from the producer to the final consumer.
             </p>
-
             <br>
             <p class="bold">
-             GioWine is the only team specialized in Italian wine to cover uninterrupted territory <a data-toggle="modal" data-target="#myModal" id="black" class="hvr-underline-from-center"> from Alaska to Tierra del Fuego!   </a></p>                                           <!-- Button trigger modal -->
-    
+             GioWine is the only team specialized in Italian wine to cover uninterrupted territory <a data-toggle="modal" data-target="#myModal" id="black" class="hvr-underline-from-center"> from Alaska to Tierra del Fuego!</a>
+            </p>
           </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel"> We promote fine Italian products in the following X countries:</h4>
-                </div>
-                <div class="modal-body">
-                  <p>• <strong>North America:</strong> United States</p>
-                  <p>• <strong>Central America:</strong> Mexico, Belize, Bolivia, Costa Rica, El salvador, Guatemala, Honduras, Nicaragua, Panama</p>
-                  <p>• <strong>Caribbean:</strong> Antigua & Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Cayman Islands, Curacao, Dominican Republic, Haiti, Martinique, Netherlands Antilles, Puerto Rico, Saint Lucia, Saint Martin, Saint Thomas, Trinidad & Tobago, Turks & Caicos, U.S. Virgin Islands</p>
-                  <p>• <strong>South America:</strong> Argentina, Brazil, Chile, Colombia, Guyana, Paraguay, Peru, Uruguay, Venezuela </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div><!--end modal-->
-
-        </div><!--end row-->
-
       </div><!--end column-->
     </div><!--end row-->
   </div><!--end .blurb-->
-
-
-  <div class="container">
-    <h2>our partners</h2>
-    <hr>
+  <div class="blurb">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>our partners</h2>
+        <hr>
+      </div>
+    </div>
     <div class="partners" id="close">
-      <% brands = [
-        {name:'Batasiolo', img:'brands/batasiolo.png', url:'http://www.batasiolo.com/'},
-        {name:'Casale del Giglio', img:'brands/casale.png', url:'http://www.casaledelgiglio.it/en/'},
-        {name:'Casanova Di Neri', img:'brands/casanova.png', url:'http://www.casanovadineri.it/'},
-        {name:'Cecchi', img:'brands/cecchi.png', url:'http://cecchi.net/'},
-        {name:'Fantinel', img:'brands/fantinel.png', url:'http://www.fantinel.com/'},
-        {name:'Farnese', img:'brands/farnese.png', url:'http://www.farnesevini.it/'},    
-        {name:'Maschio', img:'brands/maschio.png', url:'http://www.cantinemaschio.it/'},
-        {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
-        {name:'Mazzei', img:'brands/mazzei.png', url:'http://www.mazzei.it/'},
-        {name:'Planeta', img:'brands/planeta.png', url:'http://www.planeta.it/'},
-        {name:'Riunite', img:'brands/riunite.png', url:'http://www.riunite.com/'},
-        {name:'Vesevo', img:'brands/vesevo.png', url:'http://www.farnesevini.it/vesevo_azienda'},
-        {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
-        {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
-        {name:'Vigouroux', img:'brands/vigouroux.jpg', url:'http://www.g-vigouroux.fr/'},
-        {name:'Cattier', img:'brands/cattier.jpg', url:'http://www.cattier.com/'},
-        {name:'Chiostro', img:'brands/chiostro.png', url:'#'},
-        {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
-        {name:'Rustichella', img:'brands/rustichella.png', url:'http://rustichella.it/index.php?lang=it'}, 
-
-
-
-        
-        ] %>
+      <div class="row">
+        <% brands = [
+          {name:'Batasiolo', img:'brands/batasiolo.png', url:'http://www.batasiolo.com/'},
+          {name:'Casale del Giglio', img:'brands/casale.png', url:'http://www.casaledelgiglio.it/en/'},
+          {name:'Casanova Di Neri', img:'brands/casanova.png', url:'http://www.casanovadineri.it/'},
+          {name:'Cecchi', img:'brands/cecchi.png', url:'http://cecchi.net/'},
+          {name:'Fantinel', img:'brands/fantinel.png', url:'http://www.fantinel.com/'},
+          {name:'Farnese', img:'brands/farnese.png', url:'http://www.farnesevini.it/'},
+          {name:'Maschio', img:'brands/maschio.png', url:'http://www.cantinemaschio.it/'},
+          {name:'Masi', img:'brands/masi.png', url:'http://www.masi.it/'},
+          {name:'Mazzei', img:'brands/mazzei.png', url:'http://www.mazzei.it/'},
+          {name:'Planeta', img:'brands/planeta.png', url:'http://www.planeta.it/'},
+          {name:'Riunite', img:'brands/riunite.png', url:'http://www.riunite.com/'},
+          {name:'Vesevo', img:'brands/vesevo.png', url:'http://www.farnesevini.it/vesevo_azienda'},
+          {name:'Lazzaroni', img:'brands/lazzaroni.jpg', url:'http://www.lazzaronisaronno.com/'},
+          {name:'Crus et Prestige', img:'brands/cetp.png', url:'http://crus-et-prestige.com/'},
+          {name:'Vigouroux', img:'brands/vigouroux.jpg', url:'http://www.g-vigouroux.fr/'},
+          {name:'Cattier', img:'brands/cattier.jpg', url:'http://www.cattier.com/'},
+          {name:'Chiostro', img:'brands/chiostro.png', url:'#'},
+          {name:'Ferrarelle', img:'brands/ferrarelle.png', url:'http://www.ferrarelle.it/lazienda/il-mondo-di-ferrarelle-s.p.a.html'},
+          {name:'Rustichella', img:'brands/rustichella.png', url:'http://rustichella.it/index.php?lang=it'},
+          ]
+        %>
         <% brands.each do |brand| %>
-        <div class="col-sm-3 col-xs-6">
-          <a href="<%= brand[:url] %>" target="_blank">
-            <%= image_tag(brand[:img], alt: brand[:name], width:180) %>
-          </a>
-        </div>
+          <div class="col-sm-3 col-xs-6">
+            <a href="<%= brand[:url] %>" target="_blank">
+              <%= image_tag(brand[:img], alt: brand[:name], width:180) %>
+            </a>
+          </div>
         <% end %>
+      </div>
       </div>
     </div>
   </div><!-- /.companies -->
 </div><!-- /.jumbotron -->
+
+
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> We promote fine Italian products in the following X countries:</h4>
+      </div>
+      <div class="modal-body">
+        <p>• <strong>North America:</strong> United States</p>
+        <p>• <strong>Central America:</strong> Mexico, Belize, Bolivia, Costa Rica, El salvador, Guatemala, Honduras, Nicaragua, Panama</p>
+        <p>• <strong>Caribbean:</strong> Antigua & Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Cayman Islands, Curacao, Dominican Republic, Haiti, Martinique, Netherlands Antilles, Puerto Rico, Saint Lucia, Saint Martin, Saint Thomas, Trinidad & Tobago, Turks & Caicos, U.S. Virgin Islands</p>
+        <p>• <strong>South America:</strong> Argentina, Brazil, Chile, Colombia, Guyana, Paraguay, Peru, Uruguay, Venezuela </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <%= stylesheet_link_tag 'index',    media: 'all' %>
 <%= javascript_include_tag '//cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js', 'leaflet.smoothmarkerbouncing', 'index', media: 'all' %>

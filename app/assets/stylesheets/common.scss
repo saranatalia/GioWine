@@ -279,8 +279,7 @@ ul.nav a:focus {
 }
 
 .blurb {
-
-  padding: 15px;
+  // padding: 15px;
 }
 
 .blurb .row {
@@ -693,4 +692,16 @@ transition: all 0.3s ease-out;
 .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+}
+
+
+.modal-backdrop {
+  z-index: 1002;
+}
+
+@media (max-width: 991px) {
+    .jumbotron {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
