@@ -18,9 +18,16 @@ footer p {
 }
 
 
+.carousel-control,
+.carousel-control.right,
+.carousel-control.left {
+  background: none;
+  width: 10%;
+}
+
 // .nav-tabs li a {
 //   color: red;
- 
+
 // }
 
 // li .active {
@@ -37,6 +44,6 @@ footer p {
 // }
 
 // .nav-tabs li > a:hover {
-   
+
 //    color: blue;
 // }
