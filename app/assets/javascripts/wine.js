@@ -74,7 +74,6 @@ _.map(markers_data, function(data, key){
     $('.jumbotron p[data-name='+data.name+']').removeClass('hover');
   })
   marker.on('click', function() {
-    console.log(data.modal);
     $(data.modal).modal('toggle');
   });
   data.marker = marker;
