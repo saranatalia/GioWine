@@ -57,12 +57,13 @@
                   <p class="bold hvr-underline-from-center" data-name="fantinel" >Fantinel</p>
                   <br>
                   <p class="bold hvr-underline-from-center" data-name="vesevo" >Vesevo</p>
-                </div>
-                <div class="col-md-7">
+                  <br>
                   <p class="bold hvr-underline-from-center" data-name="maschio" >Maschio</p>
                   <br>
                   <p class="bold hvr-underline-from-center" data-name="masi" >Masi</p>
-                  <br>
+                
+                </div>
+                <div class="col-md-7">
                   <p class="bold hvr-underline-from-center" data-name="farnese" >Farnese</p>
                   <br>
                   <p class="bold hvr-underline-from-center" data-name="cecchi" >Cecchi</p>
@@ -72,6 +73,15 @@
                   <p class="bold hvr-underline-from-center" data-name="casale" >Casale del Giglio</p>
                   <br>
                   <p class="bold hvr-underline-from-center" data-name="roncaia" >La Roncaia</p>
+                    <br>
+                  <p class="bold hvr-underline-from-center" data-name="roncaia" >Vigneti del Salento</p>
+                    <br>
+                  <p class="bold hvr-underline-from-center" data-name="roncaia" >Vigneti del Vulture</p>
+                    <br>
+                  <p class="bold hvr-underline-from-center" data-name="roncaia" >Castello Monaci</p>
+                  <br>
+                  <p class="bold hvr-underline-from-center" data-name="roncaia" >Fontana Candida </p>
+
                 </div>
               </div>
 
@@ -88,6 +98,8 @@
                 <p class="hvr-underline-from-center" data-name="rustichella" >Rustichella Pasta Artigianale</p>
                 <br>
                 <p class="hvr-underline-from-center" data-name="ferrarelle" >Ferrarelle Mineral Water</p>
+                 <br>
+                <p class="hvr-underline-from-center" data-name="mutti" >Mutti Solo Pomodoro</p>
               </div>
 
 
@@ -107,7 +119,7 @@
       </div>
       <div class="col-md-7">
         <div id="map2"></div><!-- /MAP-->
-        <caption> <div id="spacing"><i>Each marker on this map of Italy represents one of our producers.</i></div>
+        <caption> <div id="spacing"><i>Each marker on this map of Italy represents one of our producers. Click for more information.</i></div>
       </div>
 
 
@@ -368,6 +380,81 @@ logo:{
   alt: 'Planeta logo'
 },
 link:'http://www.planeta.it/en/olio'
+},
+{ id:   'vulture',
+  title:'VIGNETI DEL VULTURE',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: " | Region: Basilicata",
+quote: "nugs."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.farnesevini.it/vigneti_del_vulture_azienda'
+},
+{ id:   'fontana',
+  title:'FONTANA CANDIDA',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: " | Region: Lazio",
+quote: "hello."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.fontanacandida.com/'
+},
+{ id:   'monaci',
+  title:'CASTELLO MONACI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: "Hand-picked olives at Planeta's Caparrina oil mill | Region: Puglia",
+quote: "castello monaci."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.castellomonaci.com/en/'
+},
+{ id:   'vignetisal',
+  title:'VIGNETI DEL SALENTO',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: " | Region: Puglia",
+quote: "need to adjust pics."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.farnesevini.it/vigneti_del_salento_azienda'
+},
+{ id:   'mutti',
+  title:'MUTTI',
+  body:[{
+    html: %W(
+      #{image_tag("winery/planeta_oil_3.jpg", alt:"Planeta Olives", width:"75%")}
+      ).join(' '),
+caption: " | Region: Parma",
+quote: "need to adjust pics."
+}],
+logo:{
+  src: 'brands/planeta.png',
+  alt: 'Planeta logo'
+},
+link:'http://www.mutti-parma.com/en'
 },
 { id:   'myModal16',
   title:'LA RONCAIA',

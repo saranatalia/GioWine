@@ -37,13 +37,18 @@ var markers_data = {
   casanova:     {name: 'casanova',    extraClasses:'', coord:[43.057149,11.5219],      modal:'#myModal8',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   masi:         {name: 'masi',        extraClasses:'', coord:[45.523359,10.863783],    modal:'#myModal9',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   lazzaroni:    {name: 'lazzaroni',   extraClasses:'', coord:[45.4015845,9.059264],    modal:'#myModal10', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
-  casale:       {name: 'casale',      extraClasses:'', coord:[41.880312,12.486956],    modal:'#myModal11', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  casale:       {name: 'casale',      extraClasses:'', coord:[41.880312,12.286956],    modal:'#myModal11', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   cecchi:       {name: 'cecchi',      extraClasses:'', coord:[43.863751,10.248668],    modal:'#myModal12', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   vesevo:       {name: 'vesevo',      extraClasses:'', coord:[40.861278,14.737792],    modal:'#myModal13', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   roncaia:      {name: 'roncaia',     extraClasses:'', coord:[46.210658,13.303138],    modal:'#myModal16', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  monaci:       {name: 'roncaia',     extraClasses:'', coord:[40.388626,17.879691],    modal:'#monaci',    icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  vignetisal:   {name: 'vignetisal',  extraClasses:'', coord:[40.443877,17.058195],    modal:'#vignetisal', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  fontana:      {name: 'fontana',     extraClasses:'', coord:[41.830486,12.907034],    modal:'#fontana',   icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  vulture:      {name: 'vulture',     extraClasses:'', coord:[40.798203,15.962222],    modal:'#vulture',   icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   rustichella:  {name: 'rustichella', extraClasses:'', coord:[42.396833,13.56532],     modal:'#myModal14', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
   ferrarelle:   {name: 'ferrarelle',  extraClasses:'', coord:[41.26142,14.1498185],    modal:'#myModal15', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
   amaretti:     {name: 'amaretti',    extraClasses:'', coord:[45.6867005,8.9315245],   modal:'#myModal17', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
+  mutti:        {name: 'mutti',       extraClasses:'', coord:[44.150763,10.9380075],   modal:'#mutti',     icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null},
   olio:         {name: 'olio',        extraClasses:'', coord:[37.6042748,12.9660447],  modal:'#myModal18', icon:{type:'glyphicon glyphicon-cutlery',       color:'green'},      marker:null}
 };
 
