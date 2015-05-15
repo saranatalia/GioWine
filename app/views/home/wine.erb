@@ -446,7 +446,7 @@ modals = [
     },
     {
       html:%W(
-        <h4><i> Featured Product: Friulano<i></h4>
+        <h4><i> Featured Product: Friulano</i></h4>
         #{image_tag("featured/roncaia.jpg", alt:"La Roncaia Friulano Wine", :class => "featured")}
         <p>Composition:</p>
         <p>Awards:</p>
@@ -487,14 +487,18 @@ modals = [
             <div class="item <%= 'active' if (index == 0) %>">
               <div class="">
                 <%= item[:html].html_safe %>
+                <% unless item[:caption].nil? || item[:caption].empty? %>
                 <p class="caption">
                   <%= item[:caption] %>
                 </p>
+                <% end %>
+                <% unless item[:quote].nil? || item[:quote].empty? %>
                 <blockquote>
                   <p>
                     <%= item[:quote] %>
                   </p>
                 </blockquote>
+                <% end %>
               </div>
             </div>
             <% end %>
