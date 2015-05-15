@@ -474,18 +474,20 @@ modals = [
       </div>
       <div class="modal-body">
 
-        <div id="myCarousel-<%= count %>" class="carousel slide carousel-fit" data-ride="carousel">
+        <div id="myCarousel-<%= count %>" class="carousel slide carousel-fit" data-ride="carousel" data-interval="5000">
           <!-- Indicators -->
+          <% if modal[:body].length > 1 %>
           <ol class="carousel-indicators">
             <% modal[:body].each_with_index do |item, index| %>
             <li data-target="#myCarousel-<%= count %>" data-slide-to="<%= index %>" class="<%= 'active' if (index == 0) %>"></li>
             <% end %>
           </ol>
+          <% end %>
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <% modal[:body].each_with_index do |item, index| %>
             <div class="item <%= 'active' if (index == 0) %>">
-              <div class="">
+              <div class="item_content">
                 <%= item[:html].html_safe %>
                 <% unless item[:caption].nil? || item[:caption].empty? %>
                 <p class="caption">
@@ -499,7 +501,7 @@ modals = [
                   </p>
                 </blockquote>
                 <% end %>
-                <br>
+                <div class="spacing"></div>
               </div>
             </div>
             <% end %>
@@ -513,7 +515,7 @@ modals = [
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
           <% end %>
-        </div>
+          </div>
 
 
 
