@@ -15,18 +15,29 @@
 //= require bootstrap
 //= require_self
 
-var start_to_fix_header = 30;
-var calc_for_fixed_report = function() {
-  var current_scroll_top = $(window).scrollTop();
+{
+  var bodyPaddingTop = $('body').css('padding-top');
+  bodyPaddingTop = Number(bodyPaddingTop.substring(0, bodyPaddingTop.length-2));
+  var relativeHeaderHeight = $('#header').outerHeight(true);
   var current_position = $('#header').css('position');
-  if ((current_scroll_top > start_to_fix_header) && (current_position != 'fixed')) {
-    $('#header').addClass('fixed');
-    $('#saracontent').css('margin-top', $('#header').height()+($('#header').height()/2));
-  }
-  if ((current_scroll_top < (start_to_fix_header + 1)) && (current_position == 'fixed')) {
-    $('#header').removeClass('fixed');
-    $('#saracontent').css('margin-top', 0);
-  }
-};
-$(window).scroll(calc_for_fixed_report);
-calc_for_fixed_report();
+  var fixedHeaderHeight = 83; // height(73) + margin-bottom(10)
+
+  var start_to_fix_header = (bodyPaddingTop + relativeHeaderHeight) - fixedHeaderHeight;
+  var calc_for_fixed_report = function() {
+    var current_scroll_top = this.scrollY;
+    if ((current_scroll_top > start_to_fix_header) && (current_position != 'fixed'))
+    {
+      $('#header').addClass('fixed');
+      $('body').css('padding-top', bodyPaddingTop+relativeHeaderHeight);
+      current_position = 'fixed';
+    }
+    else if ((current_scroll_top < (start_to_fix_header + 1)) && (current_position == 'fixed'))
+    {
+      $('#header').removeClass('fixed');
+      $('body').css('padding-top', bodyPaddingTop);
+      current_position = 'relative';
+    }
+  };
+  $(window).scroll(calc_for_fixed_report);
+  calc_for_fixed_report();
+}

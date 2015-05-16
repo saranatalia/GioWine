@@ -137,6 +137,9 @@ article {
           transform: none;
 }
 
+#saracontent {
+  padding-top: 15px;
+}
 
 .name {
   color: #47525E;

@@ -223,16 +223,6 @@ nav img {
   border-radius: 30px;
 }
 
-ul.nav a:hover {
- text-decoration: underline !important;
- color: white !important;
-}
-
-ul.nav a:focus {
- text-decoration: underline !important;
- color: white !important;
-}
-
 
 /*-----------------------------------------------------------------------------
 =DIVS
@@ -247,23 +237,6 @@ ul.nav a:focus {
   margin: 0 auto;
   padding-bottom: 20px;
 }
-
-/*.flexrow {
-  display: -webkit-flex;
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -webkit-justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-align-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}*/
-
 
 .partners .col-sm-3 a {
   display: inline-block;
@@ -327,11 +300,6 @@ ul.nav a:focus {
   width: 100%;
 
   color: rgba(141,32,54, 0.9);
-}
-
-#map2 {
-  height: 635px;
-  width: 580px;
 }
 
 #map3 {
@@ -676,7 +644,7 @@ transition: all 0.3s ease-out;
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: gray; 
+  background: gray;
   // <--here ^^-->
   height: 4px;
   -webkit-transition-property: left, right;

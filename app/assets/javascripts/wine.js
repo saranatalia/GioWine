@@ -9,6 +9,15 @@
   touchZoom: false,
   zoomControl: false
 });
+/* Define options of bouncing for all markers */
+L.Marker.setBouncingOptions({
+        bounceHeight  : 10,   // height of the bouncing
+        bounceSpeed   : 45,   // bouncing speed coefficient
+        exclusive     : true, // if this marker bouncing all others must stop
+        elastic       : true, // activate contract animation when marker touch the ground
+        contractSpeed : 34,   // contracting speed coefficient, default: 52
+        contractHeight: 8,   // how much marker will contract when it touch the ground (px), default: 12
+});
 
 var Thunderforest_Outdoors = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
               {
@@ -74,20 +83,9 @@ _.map(markers_data, function(data, key){
     $('.jumbotron p[data-name='+data.name+']').removeClass('hover');
   })
   marker.on('click', function() {
-    console.log(data.modal);
     $(data.modal).modal('toggle');
   });
   data.marker = marker;
-});
-
-/* Define options of bouncing for all markers */
-L.Marker.setBouncingOptions({
-        bounceHeight  : 20,   // height of the bouncing
-        bounceSpeed   : 34,   // bouncing speed coefficient
-        exclusive     : true, // if this marker bouncing all others must stop
-        elastic       : true, // activate contract animation when marker touch the ground
-        contractSpeed : 34,   // contracting speed coefficient, default: 52
-        contractHeight: 12,   // how much marker will contract when it touch the ground (px), default: 12
 });
 
 
