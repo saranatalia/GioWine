@@ -9,6 +9,15 @@
   touchZoom: false,
   zoomControl: false
 });
+/* Define options of bouncing for all markers */
+L.Marker.setBouncingOptions({
+        bounceHeight  : 10,   // height of the bouncing
+        bounceSpeed   : 45,   // bouncing speed coefficient
+        exclusive     : true, // if this marker bouncing all others must stop
+        elastic       : true, // activate contract animation when marker touch the ground
+        contractSpeed : 34,   // contracting speed coefficient, default: 52
+        contractHeight: 8,   // how much marker will contract when it touch the ground (px), default: 12
+});
 
 var Thunderforest_Outdoors = L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png',
               {
@@ -24,7 +33,7 @@ var markers_data = {
   champagne:     {name: 'champagne',    extraClasses:'', coord:[48.976054, 4.382627],    modal:'#champagne',    icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   burgundy:      {name: 'burgundy',     extraClasses:'', coord:[47.2780655,4.1823779],   modal:'#burgundy',     icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   rhonevalley:   {name: 'rhonevalley',  extraClasses:'', coord:[44.0758227,4.6704557],   modal:'#rhonevalley',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null}
-  
+
 };
 
 _.map(markers_data, function(data, key){
@@ -53,16 +62,6 @@ _.map(markers_data, function(data, key){
     $(data.modal).modal('toggle');
   });
   data.marker = marker;
-});
-
-/* Define options of bouncing for all markers */
-L.Marker.setBouncingOptions({
-        bounceHeight  : 20,   // height of the bouncing
-        bounceSpeed   : 34,   // bouncing speed coefficient
-        exclusive     : true, // if this marker bouncing all others must stop
-        elastic       : true, // activate contract animation when marker touch the ground
-        contractSpeed : 34,   // contracting speed coefficient, default: 52
-        contractHeight: 12,   // how much marker will contract when it touch the ground (px), default: 12
 });
 
 $('#the_wines p[data-name]').each(function(index, element) {
