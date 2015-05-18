@@ -1,4 +1,4 @@
-hr {
+featuredhr {
   border-color: lightgray;
   padding-bottom: -10px;
 
@@ -9,7 +9,7 @@ text-align: left;
 }
 
 img.featured {
-  width: 40%
+  width: 60%
 
 }
 
@@ -74,5 +74,6 @@ $desturateBy: 55%;
 
 #map2 {
   height: 635px;
-  width: 100%;
+  width: 580px;
+  margin: 0 auto;
 }

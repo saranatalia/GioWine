@@ -32,7 +32,7 @@ var markers_data = {
   cahors:        {name: 'cahors',       extraClasses:'', coord:[44.456522,1.4390129],    modal:'#cahors',       icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   champagne:     {name: 'champagne',    extraClasses:'', coord:[48.976054, 4.382627],    modal:'#champagne',    icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   burgundy:      {name: 'burgundy',     extraClasses:'', coord:[47.2780655,4.1823779],   modal:'#burgundy',     icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
-  rhonevalley:   {name: 'rhonevalley',  extraClasses:'', coord:[44.0758227,4.6704557],   modal:'#rhonevalley',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null}
+  rhonevalley:   {name: 'rhonevalley',  extraClasses:'', coord:[44.0758227,4.6704557],   modal:'#rhonevalley',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
 
 };
 
