@@ -141,8 +141,16 @@ height: 620px !important;
   font-style: italic;
   letter-spacing: 2px;
   background-color: rgba(0,0,0, 0.6);
+  margin: -5px;
 }
 
+.modal-content {
+  color: black;
+}
+
+.modal-title {
+  color: rgba(141,32,54, 0.9);
+}
 /*-----------------------------------------------------------------------------
 =NAVBAR
 -----------------------------------------------------------------------------*/
@@ -313,7 +321,7 @@ nav img {
 }
 
 #map3 {
-  height: 635px;
+  height: 520px;
   width: 580px;
 }
 
@@ -502,6 +510,10 @@ transition: all 0.3s ease-out;
   width: 100%;
   padding-bottom: 15px;
 
+}
+
+.modal-body .caption {
+  font-size: 17px !important;
 }
 
 .modal-footer img {

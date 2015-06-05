@@ -1,10 +1,19 @@
 <div id="header">
+    <div class="social">
+      <a href="https://www.facebook.com/pages/Giowine/238955622585?fref=ts" target="_blank"><i class="fa fa-facebook-square"></i></a>
+    </div>
   <div class="big">
+
     <%= link_to root_path do %> <%= image_tag('the_big_logo_compress.png', alt: 'Giowine logo') %> <% end %>
-    <p class="center">Your Link to the Americas</p>
+    <p class="center">The Italian Link to the Americas</p>
   </div>
   <div class="small">
+    <div class="socialsmall">
+      <a href="https://www.facebook.com/pages/Giowine/238955622585?fref=ts" target="_blank"><i class="fa fa-facebook-square"></i></a>
+    </div>
+    <div class="logo_small">
     <%= link_to root_path do %> <%= image_tag('small_logo_compress.png', alt: 'Giowine logo') %> <% end %>
+    </div>
   </div>
   <nav>
     <div class="flexrow center">
@@ -20,6 +29,7 @@
       <div class="element">
         <%= link_to 'Español', contact_path, :class => "hvr-underline-from-center" %>
       </div>
+   
     </div>
   </nav>
 </div>

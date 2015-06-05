@@ -1,5 +1,5 @@
  var map = L.map('map3', {
-  center: [45.8180695,1.321565],
+  center: [46.8180695,1.321565],
   zoom: 6,
   minZoom: 6,
   maxZoom: 6,
@@ -31,8 +31,8 @@ var markers_data = {
   bordeaux:      {name: 'bordeaux',     extraClasses:'', coord:[44.8423155,-0.5813319],  modal:'#bordeaux',     icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   cahors:        {name: 'cahors',       extraClasses:'', coord:[44.456522,1.4390129],    modal:'#cahors',       icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
   champagne:     {name: 'champagne',    extraClasses:'', coord:[48.976054, 4.382627],    modal:'#champagne',    icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
-  burgundy:      {name: 'burgundy',     extraClasses:'', coord:[47.2780655,4.1823779],   modal:'#burgundy',     icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
-  rhonevalley:   {name: 'rhonevalley',  extraClasses:'', coord:[44.0758227,4.6704557],   modal:'#rhonevalley',  icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  rhonevalley:   {name: 'rhonevalley',  extraClasses:'', coord:[44.0758227,4.6704557],    modal:'#rhonevalley', icon:{type:'wine_tasting wine_tasting-glass',   color:'darkpurple'}, marker:null},
+  
 
 };
 
@@ -64,7 +64,24 @@ _.map(markers_data, function(data, key){
   data.marker = marker;
 });
 
-$('#the_wines p[data-name]').each(function(index, element) {
+
+
+var overShow = function(name) {
+  _.map(markers_data, function(data, k){
+    if ((name != k) && (data.marker.options.opacity != 0.2))
+      data.marker.setOpacity(0.2);
+    else if (data.marker.options.opacity != 1)
+      data.marker.setOpacity(1);
+  });
+};
+var allTheSame = function() {
+  _.map(markers_data, function(data, k){
+    if (data.marker.options.opacity != 1)
+      data.marker.setOpacity(1);
+  });
+};
+
+$('#french_wines p[data-name]').each(function(index, element) {
   var key = $(element).attr('data-name');
   var marker = markers_data[key].marker;
   $(element).on('mouseleave', allTheSame);
@@ -76,4 +93,6 @@ $('#the_wines p[data-name]').each(function(index, element) {
   });
 
 });
+
+
 
