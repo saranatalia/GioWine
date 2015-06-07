@@ -19,19 +19,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
   giowine: GioWine
   title:
-    index: Welcome to Giowine
+    index: Welcome to ES
     wine: Wine
     contact: Contact
     press: Press
     news: News
     calendar: Calendar
     winefrance: French Wine
-  header:
-    italianlink: The Italian Link to the Americas
-    menu:
-      home: Home
-      products: Products
-      contact: Contact

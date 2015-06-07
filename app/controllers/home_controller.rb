@@ -1,4 +1,4 @@
-class HomeController < ActionController::Base
+class HomeController < ApplicationController
   layout "application"
 
   def wake_up
@@ -8,31 +8,31 @@ class HomeController < ActionController::Base
   end
 
   def index
-    @title = 'Welcome to GioWine'
+    @title = t('title.index')
   end
 
   def wine
-    @title = 'GioWine > Wine'
+    @title = t('giowine') + ' > ' + t('title.wine')
   end
 
   def contact
-    @title = "Giowine > Contact"
+    @title = t('giowine') + ' > ' + t('title.contact')
   end
 
   def press
-    @title = "Giowine > Press"
+    @title = t('giowine') + ' > ' + t('title.press')
   end
 
   def news
-    @title = "Giowine > News"
+    @title = t('giowine') + ' > ' + t('title.news')
   end
 
   def calendar
-    @title = "Giowine > Calendar"
+    @title = t('giowine') + ' > ' + t('title.calendar')
   end
 
   def winefrance
-    @title = "Giowine > French Wine"
+    @title = t('giowine') + ' > ' + t('title.winefrance')
   end
 
 end
