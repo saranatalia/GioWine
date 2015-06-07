@@ -81,7 +81,7 @@
 
 <div class="team">
 
-  
+
 
 <p>Our team of multilingual wine professionals will guide you through an inconceivable diversity of wines beyond the typical grape varieties that will transform your sensory experience. Each member contributes a different area of expertise to our synergistic team, from oneology, to marketing, to sales. What we all share in common is a passion for wine…
 </p>
@@ -200,14 +200,10 @@
         <div class="contact">
           <%= image_tag person[:picture] %>
           <p class="bold"><%= person[:name] %> <a href="<%= person[:mail][:link] %>"> <i class="fa fa-envelope-o hvr-icon-grow-rotate"></i><%= person[:mail][:mail] %></a></p>
-          <p><%= person[:title] %></p>
-
+          <p class="person_title"><%= person[:title] %></p>
         </div>
       </div>
       <% end %>
-
-      <div class="col-md-3"></div>
-
     </div><!-- /row-->
 
   </div><!-- /container-->
