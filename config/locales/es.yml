@@ -22,10 +22,16 @@
 es:
   giowine: GioWine
   title:
-    index: Welcome to ES
+    index: Welcome to Giowine
     wine: Wine
     contact: Contact
     press: Press
     news: News
     calendar: Calendar
     winefrance: French Wine
+  header:
+    italianlink: The Italian Link to the Americas
+    menu:
+      home: Home
+      products: Products
+      contact: Contact

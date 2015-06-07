@@ -1,5 +1,7 @@
 en:
   wine:
+    tabwine: WINE
+    tabfood: FOOD
     winedescription: |-
       GioWine represents a varied portfolio of nationally renowned quality
       Italian wines from all over the country. Each region of Italy embodies a
@@ -14,3 +16,70 @@ en:
       of top international chefs, olive oil cultivated on the Sicilian seaside, and
       the original amaretti cookies since the 1700s. Buon appetito!
     infomarker: Each marker on this map of Italy represents one of our producers.
+    modals:
+      planeta:
+        link: "http://www.planeta.it/"
+        0:
+          html: "<%= image_tag('winery/planeta.jpg', alt:'Planeta Winery') %>"
+          caption: "A bottle of Planeta Chardonny ready for tasting | Region: Sicilia"
+          quote: |-
+            Planeta represents not just one, but six ways of developing the territory,
+            in six different settings between Sambuca di Sicilia and Menfi: there are
+            six Planeta wine producing estates, each one with a specific research and
+            development project.
+        1:
+          html: |-
+            <h4> <i>Featured Product:</i> Chardonnay DOC</h4>
+            <%= image_tag('featured/planeta.jpg', alt:'Planeta\'s Chardonnay DOC', :class => 'featured') %>
+            <p><strong>Grape Varieties:</strong> 100% Chardonnay</p>
+            <p><strong>Tasting Note:</strong> Deep gold in color, crisp and creamy on the palate, this soft, round white is supported by refreshing acidity. Mineral undertones complement flavors of ripe yellow peaches, acacia honey, and almond paste. With bold toasted and cereal aromas, this wine has a long and balanced finish. </p>
+            <p><strong>Awards:</strong> <i>2010 vintage</i> Chardonnay du Monde 2012 - Gold Medal</p>
+      batasiolo:
+        link: "http://www.batasiolo.com/"
+        0:
+          html: "<%= image_tag('winery/harvest.jpg', alt:'Batasiolo Winery') %>"
+          caption: "Harvest time at the Batasiolo vineyards | Region: Piemonte"
+          quote: |-
+            In the old local dialect the word 'beni' means a property or estate,
+            and it is this idea of the unbreakable bond existing between the farmer
+            and his vineyard which is encapsulated in the name 'Beni di Batasiolo.'
+        1:
+          html: |-
+            <h4><i> Featured Product:</i> Barolo DOCG</h4>
+            <%= image_tag("featured/batasiolo.jpg", alt:"Batasiolo's Barolo DOCG", :class => "featured") %>
+            <p><strong>Grape Varieties:</strong> 100% Nebbiolo</p>
+            <p><strong>Tasting Note:</strong> Deep garnet red color. The bouquet has all the typical aromas of the nebbiolo grape, showing dried fruit, flowers, spices, and typical delicate herbaceous aromas. In the mouth, the perfect balance between tannins, freshness, and alcoholic content offer truly powerful sensations. Elegant and pleasing. </p>
+            <p><strong>Awards:</strong> <i>2010 Vintage:</i> 93 points, Editor's Choice for Wine Enthusiast</p>
+      maschio:
+        link: 'http://www.cantinemaschio.it/en'
+        0:
+          html: |-
+            <iframe width="100%" height="375" src="https://www.youtube.com/embed/vd-MMShhxRs" frameborder="0" allowfullscreen></iframe>
+          caption: |-
+            Maschio's 2012 commercial for their Pinot Rosa wine, giving tasters a "sparkling moment" | Region: Veneto
+          quote: |-
+            These are products that satisfy even the most demanding palates at the most particular moments.
+            For over 40 years Maschio has been a synonym of quality and a guarantee of success.
+        1:
+          html: |-
+            <h4><i> Featured Product:</i> Prosecco DOCG Valdobbiadene Rive di Colbertaldo</h4>
+            <%= image_tag("featured/maschio.jpg", alt:"Maschio's Prosecco DOCG Valdobbiadene", :class => "featured") %>
+            <p><strong>Grape Varieties:</strong> 100% Glera. Brut.</p>
+            <p><strong>Tasting Note:</strong> Bright straw yellow color with a creamy mousse. The nose includes  sweet floral notes of wisteria, along with fruity pear and apricot tones. Mellow and fruity taste with hints of pineapple and melon. </p>
+      mazzei:
+        link: 'http://www.mazzei.it/eng_intro/no_intro:1'
+        0:
+          html: |-
+            <%= image_tag("winery/mazzei.jpg", alt:"Mazzei Winery") %>
+          caption: |-
+            The Mazzei vineyards are visible from the village of Gelso | Region: Toscana
+          quote: |-
+            Today, after almost six centuries, the Mazzei family still devotes itself to winemaking,
+            with constant commitment, an eye towards innovation, and an abiding respect for the land.
+        1:
+          html: |-
+            <h4><i> Featured Product:</i> Marchesi Castello di Fonterutoli Siepi Toscana IGT</h4>
+            <%= image_tag("featured/mazzei.jpg", alt:"Mazzei's Siepi IGT", :class => "featured") %>
+            <p><strong>Grape Varieties:</strong>  50% Merlot, 50% Sangiovese</p>
+            <p><strong>Tasting Note:</strong>  Deep ruby red color with purple highlights, intense aromas of ripe blackberries and dark cherries, accented by notes of mint and wild herbs, highly concentrated, with sweet, dense tannins and a lush, velvety texture; dark berry fruit flavors mingle with notes of toast and spice. Grown in Fonterutoli’s Siepi single vineyard, Castellina in Chianti, Tuscany.  </p>
+            <p><strong>Awards:</strong> <i>2010 Vintage:</i> Gambero Rosso - 3 bicchieri; "One of the 50 wines that changed Italy's wine style" - Gambero Rosso; Robert Parker 95 points</p>
