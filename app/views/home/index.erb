@@ -14,55 +14,54 @@
     <div class="item active main">
       <%= image_tag("carousel/panama.jpg") %>
       <div class="carousel-caption">
-        Vice President Ricardo March explains Fantinel's wines to curious tasters
+        <%= t('index.carousel.vicepresident') %>
       </div>
     </div>
-
     <div class="item main">
       <%= image_tag("carousel/blackandwhite.jpg") %>
       <div class="carousel-caption">
-       Chilling bottles for a wine dinner at Valentino restaurant in Las Vegas
+        <%= t('index.carousel.chilling') %>
       </div>
     </div>
     <div class="item main">
       <%= image_tag("carousel/panama2.jpg") %>
       <div class="carousel-caption">
-       Italian wine event hosted by GioWine & Varela Hermanos at American Trade Hotel in Panama
+        <%= t('index.carousel.italianwine') %>
       </div>
     </div>
     <div class="item main">
       <%= image_tag("carousel/mendoza1.jpg") %>
       <div class="carousel-caption">
-        GioWine visits supplier Masi Tupungato in Mendoza, Argentina
+        <%= t('index.carousel.giovisits') %>
     </div>
     </div>
     <div class="item main">
       <%= image_tag("carousel/corks.jpg") %>
       <div class="carousel-caption">
-       Batasiolo's Barbera d'Alba
+        <%= t('index.carousel.batabarbe') %>
       </div>
     </div>
      <div class="item main ">
       <%= image_tag("carousel/val_delle_rose.jpg") %>
       <div class="carousel-caption">
-       Cecchi's Val delle Rose (Valley of Roses) vineyard in Maremma, Tuscany
+        <%= t('index.carousel.cecchivaldel') %>
       </div>
     </div>
      <div class="item main">
       <%= image_tag("carousel/neri_grapes.jpg") %>
       <div class="carousel-caption">
-       Harvest time for Casanova di Neri
+        <%= t('index.carousel.harvest') %>
       </div>
     </div>
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only"><%= t('index.carousel.previous') %></span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only"><%= t('index.carousel.next') %></span>
   </a>
 </div>
 
@@ -71,29 +70,29 @@
   <div class="blurb">
     <div class="row">
       <div class="col-md-6">
-        <h2>our offices</h2>
+        <h2><%= t('index.ouroffices') %></h2>
         <hr>
         <div id="map"></div>
         <caption>
           <div id= "spacing">
-            <i>A map of our six offices throughout the American continents.</i>
+            <i><%= t('index.amap') %></i>
           </div>
         </caption>
       </div><!-- .col-md-6 -->
       <div class="col-md-6">
-          <h2>about us</h2>
+          <h2><%= t('index.aboutus') %></h2>
           <hr>
           <div class="content">
             <p>
-              GioWine was founded in 2000 by Giovanni Cardullo as an International Consulting Firm specializing in representing fine Italian wine. With offices in 5 countries, our onsite representatives provide you international experience and networks across the Americas.
+              <%= t('index.about_1') %>
             </p>
             <br>
             <p>
-              We cultivate continuing contact between suppliers and clients to foster reliable and dynamic relationships. We work with genuine enthusiasm to develop brands and product sales internationally at a highly personal and technical level from the producer to the final consumer.
+              <%= t('index.about_2') %>
             </p>
             <br>
             <p class="bold">
-             GioWine is the only team specialized in Italian wine to cover uninterrupted territory <a data-toggle="modal" data-target="#myModal" id="black" class="hvr-underline-from-center"> from Alaska to Tierra del Fuego!</a>
+              <%= raw t('index.about_3') %>
             </p>
           </div>
       </div><!--end column-->
@@ -102,7 +101,7 @@
   <div class="blurb">
     <div class="row">
       <div class="col-md-12">
-        <h2>our partners</h2>
+        <h2><%= raw t('index.ourpartners') %></h2>
         <hr>
       </div>
     </div>
@@ -150,17 +149,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"> We promote fine Italian products in the following 45 countries:</h4>
+        <h4 class="modal-title" id="myModalLabel"><%= t('index.modal.wepromote') %></h4>
       </div>
       <div class="modal-body">
-        <p>• <strong>North America:</strong> Canada, United States</p>
-        <p>• <strong>Central America:</strong> Mexico, Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama</p>
-        <p>• <strong>Caribbean:</strong> Antigua & Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Cayman Islands, Cuba, Curacao, Dominica, Dominican Republic, Grenada, Haiti, Martinique, Netherlands Antilles, Puerto Rico, Saint Lucia, Saint Martin, Saint Thomas, Trinidad & Tobago, Turks & Caicos, U.S. Virgin Islands</p>
-        <p>• <strong>South America:</strong> Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela </p>
-         <p>• <strong>Asia:</strong> China</p>
+        <%= raw t('index.modal.body') %>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><%= t('index.modal.close') %></button>
       </div>
     </div>
   </div>
