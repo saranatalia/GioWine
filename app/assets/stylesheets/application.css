@@ -26,7 +26,7 @@
 }
 
 #header nav {
-  max-width: 600px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@
   height: 50px;
   display: none;
   text-align: center;
-    
+
 
 }
 
@@ -70,7 +70,7 @@
   height: 70px;
   padding-bottom: 20px;
   padding-top: 5px;
-    
+
 }
 
 .fixed .big {
@@ -79,7 +79,7 @@
 
 .fixed .small {
   display: block;
- 
+
 }
 
 .flexrow {
