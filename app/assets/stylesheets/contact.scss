@@ -23,6 +23,24 @@ p.person_title {
   overflow: visible;
 }
 
+.contact_page {
+  .element .main_office,
+  .element .other_office{
+    margin: 30px;
+  }
+  .element.offices_info {
+     -webkit-align-self: baseline;
+     align-self: baseline;
+  }
+}
+
+.teammembers {
+  .contact {
+    max-width: 280px;
+    text-align: left;
+  }
+}
+
 /* Icon Grow Rotate */
 /* Icon Grow Rotate */
 .hvr-icon-grow-rotate {

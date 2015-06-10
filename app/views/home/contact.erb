@@ -7,14 +7,11 @@
 
 
 
-  <div class="jumbotron">
+  <div class="jumbotron contact_page">
     <div class="blurb">
       <div id="box"><hr></div>
-      <div class="row">
-        <div class="container">
-         <div class="col-md-3">
-         </div>
-         <div class="col-md-3">
+      <div class="flexrow center">
+        <div class="element offices_info">
           <div class="main_office">
             <h4>Main Office</h4>
             <p>5580 La Jolla Blvd. #396</p>
@@ -29,7 +26,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="element offices_info">
           <div class="other_offices">
             <h4 class="center">Reach our Other Offices</h4>
             <p class="center">
@@ -49,8 +46,6 @@
             </p>
           </div>
         </div>
-        <div class="col-md-2">
-        </div>
       </div>
       <br>
       <div class="row">
@@ -63,7 +58,6 @@
         </div>
       </div>
       <br>
-    </div>  <!-- /container -->
     <div id="box">
       <hr>
       <h2>meet our team</h2>
@@ -74,9 +68,9 @@
       </p>
     </div>
     <br>
-    <div class="container">
+    <div class="teammembers">
       <br>
-      <div class="row">
+      <div class="flexrow center">
         <% people = [
           {
             picture: 'contacts/giovanni.jpg',
@@ -180,7 +174,7 @@
 
           ]  %>
           <% people.each do |person| %>
-          <div class="col-md-3">
+          <div class="element">
             <div class="contact">
               <%= image_tag person[:picture] %>
               <p class="bold"><%= person[:name] %> <a href="<%= person[:mail][:link] %>"> <i class="fa fa-envelope-o hvr-icon-grow-rotate"></i><%= person[:mail][:mail] %></a></p>
