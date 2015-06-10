@@ -17,7 +17,7 @@
         Vice President Ricardo March explains Fantinel's wines to curious tasters
       </div>
     </div>
-  
+
     <div class="item main">
       <%= image_tag("carousel/blackandwhite.jpg") %>
       <div class="carousel-caption">
@@ -33,7 +33,7 @@
     <div class="item main">
       <%= image_tag("carousel/mendoza1.jpg") %>
       <div class="carousel-caption">
-        GioWine visits supplier Masi Tupungato in Mendoza, Argentina 
+        GioWine visits supplier Masi Tupungato in Mendoza, Argentina
     </div>
     </div>
     <div class="item main">
@@ -107,7 +107,7 @@
       </div>
     </div>
     <div class="partners" id="close">
-      <div class="row">
+      <div class="flexrow center">
         <% brands = [
           {name:'Batasiolo', img:'brands/batasiolo.jpg', url:'http://www.batasiolo.com/'},
           {name:'Casale del Giglio', img:'brands/casale.jpg', url:'http://www.casaledelgiglio.it/en/'},
@@ -132,13 +132,12 @@
           ]
         %>
         <% brands.each do |brand| %>
-          <div class="col-sm-3 col-xs-6">
+          <div class="element">
             <a href="<%= brand[:url] %>" target="_blank">
               <%= image_tag(brand[:img], alt: brand[:name], width:180) %>
             </a>
           </div>
         <% end %>
-      </div>
       </div>
     </div>
   </div><!-- /.companies -->
