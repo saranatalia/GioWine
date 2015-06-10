@@ -280,7 +280,7 @@ en:
         link: 'http://www.chiostrodisaronno.it'
         0:
           html: |-
-            image_tag("winery/chiostro.jpg", alt:"Amaretti di Saronno")
+            <%= image_tag("winery/chiostro.jpg", alt:"Amaretti di Saronno") %>
           caption: |-
             The famed Amaretti del Chiostro cookies | Region: Lombardia
           quote: |-
@@ -331,7 +331,7 @@ en:
         link: 'http://www.cantinefontanacandida.it/en/'
         0:
           html: |-
-            image_tag("winery/fontana.jpg", alt:"Fontana Candida winery")
+            <%= image_tag("winery/fontana.jpg", alt:"Fontana Candida winery") %>
           caption: |-
             Fontana Candida's bottling cellar at Monteporzio Catone. | Region: Lazio
           quote: |-
