@@ -9,6 +9,7 @@
   touchZoom: false,
   zoomControl: false
 });
+map.dragging.disable();
 /* Define options of bouncing for all markers */
 L.Marker.setBouncingOptions({
         bounceHeight  : 10,   // height of the bouncing
